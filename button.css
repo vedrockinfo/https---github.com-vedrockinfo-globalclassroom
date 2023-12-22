@@ -1,0 +1,35 @@
+
+a { -webkit-transition: 0.2s ease-in-out all; -moz-transition: 0.2s ease-in-out all; -o-transition: 0.2s ease-in-out all; transition: 0.2s ease-in-out all; }
+a:link, a:visited {  text-decoration: none; }
+a:hover, a:focus { color: #111; outline: none; }
+a.moretag { font-size: 12px; text-transform: uppercase; }
+
+
+
+
+.custom-button { display: block; position: relative; overflow: hidden; padding: 5px 0px; margin: 5px 0; -webkit-transition: 0.25s ease-in-out all; -moz-transition: 0.15s ease-in-out all; -o-transition: 0.15s ease-in-out all; transition: 0.15s ease-in-out all; }
+.custom-button-wrap { display: block; margin-left: 30px; }
+.custom-button-icon { display: block; float: left; font-size: 20px; line-height: 24px; }
+.custom-button-title { display: block; font-size: 20px; font-weight: 700; color: #ffffff; line-height: 20px; letter-spacing: -.02em; text-transform: uppercase; }
+.custom-button-tagline { display: block; font-size: 13px; line-height: 16px; font-weight: 400; margin-top: 5px; }
+.custom-button-icon, .custom-button-tagline { color: #000; }
+.custom-button:hover { -moz-border-radius: 0 0 20px 0; -webkit-border-radius: 0 0 20px 0;border-radius: 0 0 20px 0; }
+.custom-button em { width: 0; height: 0; position: absolute; bottom: 0; right: 0; z-index: 30; -moz-box-shadow: -5px 2px 5px rgba( 0, 0, 0, 0.3 ); -webkit-box-shadow: -5px 2px 5px rgba( 0, 0, 0, 0.3 ); box-shadow: -5px 2px 5px rgba( 0, 0, 0, 0.3 ); -webkit-transition: 0.25s ease-in-out all; -moz-transition: 0.15s ease-in-out all; -o-transition: 0.15s ease-in-out all; transition: 0.15s ease-in-out all; }
+.custom-button:hover em { width: 15px; height: 15px; -webkit-transform: rotate(-10deg) translate3d( 0, 0, 0 ); -moz-transform: rotate(-10deg) translate3d( 0, 0, 0 ); -o-transform: rotate(-10deg) translate3d( 0, 0, 0 ); transform: rotate(-10deg) translate3d( 0, 0, 0 ); }
+/* button color examples */
+.cb-green { background-color:#129793; }
+.cb-gray { background-color: #505050; }
+.cb-yellow { background-color: #ECC8A4; }
+.cb-red { background-color: #ff7260; }
+.cb-pink { background-color: #cba5d7; }
+.cb-chili { background-color: #e4678a; }
+.cb-sky { background-color: #97c5eb; }
+
+
+/* == bootstrap buttons == */
+.textbox{ width:275px; height:22px; -moz-box-shadow:inset 0 0 10px #dfdfdf; -webkit-box-shadow: inset 0 0 10px #dfdfdf; box-shadow:inset 0 0 10px #dfdfdf; border:1px solid #ccc; margin-bottom:5px; padding-left:5px; color:#ccc;}
+
+.dropdown{ width:281px; height:22px; -moz-box-shadow:inset 0 0 10px #dfdfdf; -webkit-box-shadow: inset 0 0 10px #dfdfdf; box-shadow:inset 0 0 10px #dfdfdf; border:1px solid #ccc; margin-bottom:5px; padding-left:5px; color:#ccc;}
+/
+
+/* == END bootstrap buttons == */

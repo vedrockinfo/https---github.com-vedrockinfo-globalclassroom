@@ -1,0 +1,5538 @@
+@-ms-viewport {
+    width: device-width;
+    height: device-height;
+}
+@media (max-width: 768px) {
+    .inner {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    html #wpadminbar {display: none !important;}
+    @-ms-viewport {
+    width: device-width;
+    height: device-height;
+}
+}
+@media (min-width: 767px) {
+  .inner{
+    width: 760px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .inner {
+    width: 1024px;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .inner {
+    width: 1170px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/*============================*/
+/*      Wimdows Phone fix     */
+/*----------------------------*/
+/*.winPhone8 .hidden-lg, .winPhone8 .hidden-md, .winPhone8 .hidden-sm {
+    display: none;
+    visibility: hidden;
+}*/
+
+
+/*============================*/
+/*      PAGES STYLES          */
+/*----------------------------*/
+    /* Back to top */
+    
+    .back-to-top {
+        width: 100%;
+        background-color: #a8c2cb;
+    }
+    .back-to-top a {
+        display: block;
+        width: 100%;
+        padding: 11px 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        font: 600 13px/24px "Open Sans", Arial,sans-serif;
+    }
+    
+    /*mobile manu*/
+
+    .no-transition {
+    -webkit-transition: height 0.01s;
+    -moz-transition: height 0.01s;
+    -ms-transition: height 0.01s;
+    -o-transition: height 0.01s;
+    transition: height 0.01s;
+    }
+    .navbar-collapse.collapsing {
+    -webkit-transition: height 0.01s;
+    -moz-transition: height 0.01s;
+    -ms-transition: height 0.01s;
+    -o-transition: height 0.01s;
+    transition: height 0.01s;
+    }
+    .navbar-collapse {
+        animation: none!important;
+        -webkit-animation: none!important;
+    }
+    .navbar-collapse.in {
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-top: 70px;
+        position: relative;
+        z-index: 1;
+    }
+    .navbar-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        z-index: 2;
+        background: url(../images/header-bg.jpg) repeat;
+    }
+    .navbar {
+        border: none;
+        margin-bottom: 0px;
+        min-height: 70px;
+        text-transform: uppercase;
+    }
+    .navbar-nav {
+        margin: 0 -15px;
+    }
+    .collapse.in .navbar-nav {
+        min-height: 100%;
+    }
+    .navbar-lmb .navbar-toggle .icon-bar {
+        background-color: #000;
+    }
+    .navbar-toggle .icon-bar {
+        border-radius: 0;
+        display: block;
+        height: 5px;
+        width: 35px;
+    }
+    .navbar-toggle .icon-bar + .icon-bar {
+        margin-top: 6px;
+    }
+    .mibile-logo {
+        padding: 18px 0 23px 75px;
+    }
+    .mibile-logo a {
+        background: url(../images/mobile-logo.png) no-repeat 0 0;
+        width: 200px;
+        height: 29px;
+        display: block;
+        margin-left: 0;
+    }
+    .navbar-toggle {
+        background-color: transparent;
+        background-image: none;
+        border: medium none;
+        border-radius: 0;
+        float: left;
+        margin: 8px -65px 8px 11px;
+        padding: 9px 10px 9px 9px;
+        position: relative;
+    }
+    .navbar-nav > li > a {
+        background-color: #6db7d5;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font: 600 18px/22px "Open Sans", Arial,sans-serif;
+        color: #fff;
+        border-bottom: 1px solid #7ed0f1;
+    }
+    .navbar-nav > li > a:hover {
+        background-color: #6db7d5;
+        color: #285b70;
+        text-decoration: none;
+    }
+    .navbar-nav > li > a:focus {
+        background-color: #6db7d5;
+        color: #fff;
+    }
+    .navbar-nav > li > ul > li > a {
+        font: 600 15px/30px "Open Sans", Arial,sans-serif;
+        color: #fff;
+        background-color: #5ea1bc;
+        padding: 10px 15px;
+        display: block;
+    }
+    .navbar-nav > li > ul > li > a:hover,
+/*    .navbar-nav > li > ul > li > a:focus,*/
+    .navbar-nav > li > ul > li.current-menu-item > a {
+        color: #285b70;
+    }
+    #menu-mobile-menu li.mobile-lower > a {
+        font: 400 15px/24px "Open Sans", Arial,sans-serif;
+        text-transform: none;
+        border-bottom: none;
+        background-color: #6db7d5;
+    }
+    #menu-mobile-menu li.get-started-color > a {
+        background-color: #7dd1f3;
+    }
+    #menu-mobile-menu .sub-menu.collapse.in {
+        height: 100%;
+    }
+    .caret {
+        display: inline-block;
+        float: right;
+        height: 0;
+        margin-right: 10%;
+        margin-top: 7px;
+        vertical-align: middle;
+        width: 0;
+    }
+    #menu-mobile-menu .menu-item-has-children > a.collapsed .caret{
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid;
+        border-bottom: medium none;
+        
+    }
+    #menu-mobile-menu .menu-item-has-children > a .caret{
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid;
+        border-top: medium none;
+    }
+    
+    /* Searchform mobile */
+    #searchform_mobile {
+        position: relative;
+    }
+    #searchform_mobile #s2{
+        font: 800 18px "Open Sans",Arial,sans-serif;
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+        padding: 18px 50px 18px 20px;
+        border: medium none;
+    }
+    #searchform_mobile #searchsubmit2 {
+        background-color: #fff;
+        background-image: url(../images/search-mob.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        border: medium none;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #sidebar2 .widget .dropdown{
+        margin-top: 20px;
+    }
+    #sidebar2 .widget .dropdown .dropdown-select{
+        color: #21242c;
+    }
+    #sidebar2 .widget .dropdown .dropdown-select .caret{
+        color: #4fc673;
+    }
+    #sidebar2 .widget .dropdown-menu > li > a{
+        color: #21242c;
+        font-weight: bold;
+        white-space: pre-line;
+    }
+    #sidebar2 .widget .dropdown-menu > li > a:hover,
+    #sidebar2 .widget .dropdown-menu > li > a:focus{
+        color: #4fc673;
+        background-color: transparent;
+    }
+    
+
+@media (max-width: 767px) { /*  phone */
+    ::-webkit-input-placeholder {
+        color: #21242c;
+        opacity: 1;
+    }
+    :-moz-placeholder {
+            color: #21242c;
+            opacity: 1;
+    }
+    ::-moz-placeholder {
+            color: #21242c;
+            opacity: 1;
+    }
+    :-ms-input-placeholder {
+            color: #21242c;
+            opacity: 1;
+    }
+    .search-404 {
+        width: auto;
+    }
+    #navigation_spacer {
+        height: 70px;
+        background: url(../images/header-bg.jpg) repeat scroll center 0 rgba(0, 0, 0, 0);
+    }
+    #header {
+        min-height: 0px;
+    }
+    #header.fixed {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 100;
+    }
+    .line-top {
+        background: none;
+    }
+    .single-post .learning-center, .blog .learning-center {display: none;}
+    .navbar-nav li.learning-center-mob a{
+        display: inline-block;
+        width: 100%;
+        background: url("../images/submit-location1.png") no-repeat scroll 20px center #5ea1bc;
+        color: #fff;
+        float: none;
+        font: 14px/50px "Fauna One",Arial,sans-serif;
+        padding: 0 0 0 20px;
+        margin-top: 0px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: none;
+        border-bottom: medium none;
+    }
+    .navbar-nav li.learning-center-mob:hover a {
+        color: #285b70;
+        background: url("../images/submit-location1.png") no-repeat scroll 20px center #5ea1bc;
+    }
+    .navbar-nav li.learning-center-mob a:after {
+        content: '';
+        display: block;
+        float: none;
+        margin-left: 0;
+        width: 0px;
+        height: 0px;
+        background: none;
+    }
+    #cboxClose {
+        background: url(../images/close-youtube.png) no-repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
+        height: 45px;
+        right: 0;
+        top: -55px;
+        width: 45px;
+    }
+    .share .addthis_default_style .at300b, .share .addthis_default_style .at300bo, .share .addthis_default_style .at300m {
+        padding: 0 6px;
+    }
+    #main .inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #footer .inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer-big-links a {
+        color: #679CB1;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+    .footer-big-links a:hover{
+        color: #679CB1;
+        text-decoration: none;
+    }
+    
+    /*===== Repeatable Parts =====*/
+    
+    /*    free-box    */
+    .free {
+        margin-bottom: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .free-box {
+        float: none;
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+    .free-link {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 240px;
+    }
+    .free-item {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 225px;
+        overflow: hidden;
+        text-align: left;
+        width: 225px;
+    }
+    .free-number {
+        border-radius: 50%;
+        display: block;
+        float: left;
+        font: 34px/53px "Fauna One",Arial,sans-serif;
+        height: 53px;
+        margin: 0 -53px 25px 0;
+        text-align: center;
+        width: 53px;
+    }
+    .free-name {
+        display: block;
+        font: 800 16px "Open Sans",Arial,sans-serif;
+        padding-left: 78px;
+        text-transform: uppercase;
+    }
+    .free-name span {
+        font: 24px "Fauna One",Arial,sans-serif;
+    }
+    
+    /*    location  */
+    .location {
+        margin-bottom: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .location h3 {
+        color: #21242c;
+        font: 800 17px/24px "Open Sans",Arial,sans-serif;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    .location h2, .imagery-title {
+        font: 24px "Fauna One",Arial,sans-serif;
+        margin-bottom: 20px;
+    }
+    .location fieldset {
+        width: 240px;
+    }
+    .location input[type="text"] {
+        width: 195px;
+        font: 12px "Fauna One",Arial,sans-serif;
+    }
+    .comment-form-url > span {
+        left: 70px;
+    }
+    
+    /*    home-news    */
+    .home-news .inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .home-news h2 {
+        font: 800 17px/24px "Open Sans",Arial,sans-serif;
+        margin-bottom: 10px;
+    }
+    .home-news h3 {
+        font: 18px "Fauna One",Arial,sans-serif;
+        margin-bottom: 33px;
+    }
+    .home-blog, .home-twitter {
+        float: none;
+        margin-right: 0;
+        width: auto;
+        overflow: hidden;
+        margin-bottom: 40px;
+    }
+    .home-date {
+        margin-right: -56px;
+        width: 56px;
+    }
+    .home-excerpt {
+        margin-left: 0;
+        padding-left: 81px;
+    }
+    .home-date .day {
+        font: 32px/56px "Fauna One",Arial,sans-serif;
+        margin-bottom: 10px;
+    }
+    .home-excerpt p {
+        font: 13px/20px "Fauna One",Arial,sans-serif;
+    }
+    .home-twitter {
+        font: 13px/20px "Fauna One",Arial,sans-serif;
+        min-height: 50px;
+        width: auto;
+    }
+    .home-instagram {
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+    .home-instagram:hover {
+        background: url(../images/instagram-big-hover.png) no-repeat 0 0;
+    }
+    .home-instagram .media-grid .item img {
+        width: 56px !important;
+        height: 56px !important;
+    }
+    /* Footer */
+    #footer {
+        padding: 30px 0 0px;
+    }
+    #footer h3 {
+        font: 700 13px "Open Sans",Arial,sans-serif;
+        margin-bottom: 20px;
+    }
+    #footer .column-one, #footer .column-two {
+        float: none;
+        margin-right: 0;
+        width: auto;
+        text-align: center;
+    }
+    #footer .column-three {
+        float: none;
+        text-align: center;
+        width: auto;
+        margin-bottom: 30px;
+    }
+    .associations {
+        margin-bottom: 30px;
+    }
+    .associations img {
+        display: block;
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mailchimp-footer {
+        padding-top: 15px;
+        text-align: center;
+        width: auto;
+    }
+    #footer .socials {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #footer .socials a {
+        margin-right: 20px;
+    }
+    .bottom-one {
+        float: left;
+        width: auto;
+    }
+    .bottom-one ul {
+        list-style-type: none;
+        padding-top: 0;
+    }
+    .bottom-one #menu-privacy-menu li {
+        margin-right: 8px;
+    }
+    .bottom-one #menu-privacy-menu li a {
+        font: 9px/17px "Fauna One",Arial,sans-serif;
+        margin-right: 11px;
+    }
+    .bottom-two {
+        float: none;
+        font: 9px/17px "Fauna One",Arial,sans-serif;
+        text-align: center;
+        width: auto;
+    }
+    .bottom-three {
+        float: none;
+        font: 9px/17px "Fauna One",Arial,sans-serif;
+        padding-bottom: 12px;
+        padding-top: 0;
+        text-align: right;
+        width: auto;
+    }
+    
+    /*==========================*/
+    
+    /*===== Homepage Parts =====*/
+    #welcome {
+        padding: 20px 0;
+    }
+    .slider {
+        height: 410px;
+        min-height: 410px;
+    }
+    .slider .flexslider {
+        position: relative;
+    }
+    .slider .flexslider .flex-direction-nav {
+        display: none;
+    }
+    .slider .flex-control-nav {
+        bottom: 20px;
+        left: 50%;
+        margin-left: -45px;
+        margin-top: 0;
+        position: absolute;
+        z-index: 2;
+    }
+    #slider .slides li .inner {
+        position: relative;
+        height: 100%;
+        padding: 0 20px;
+    }
+    #slider .slides li .mobile-slide {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        display: block;
+        width: 100%;
+        z-index: 0;
+    }
+    .text-slide {
+        width: auto;
+        margin-left: auto;
+        color: #fff;
+    }
+    .text-slide.slide-1 {
+        padding-top: 35px;
+        margin-left: auto;
+    }
+    .text-slide.slide-2 {
+       padding-top: 35px;
+        color: #21242c;
+        margin-left: auto;
+    }
+    .text-slide.slide-3 {
+        width: auto;
+        padding-top: 35px;
+        text-align: center;
+        margin-left: auto;
+    }
+    .buttons-slider {
+        width: 280px;
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        margin-left: -140px;
+    }
+    .slide-btn {
+        margin-left: 20px;
+    }
+    .buttons-slider .slide-btn {
+        font: 800 15px/48px "Open Sans",Arial,sans-serif;
+        padding: 0 13px;
+    }
+    .buttons-slider.buttons-slider-1 {
+        text-align: center;
+        margin-left: -140px;
+    }
+    .buttons-slider.buttons-slider-2 {
+        text-align: center;
+        margin-left: -140px;
+    }
+    .buttons-slider.buttons-slider-3 {
+        text-align: center;
+        margin-left: -140px;
+    }
+    .text-slide h2,
+    .text-slide h3,
+    .text-slide h4 {
+        font: 800 17px/22px 'Open Sans', Arial, sans-serif;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+
+    }
+    .text-slide h2 span, .text-slide h3 span, .text-slide h4 span {
+        font: normal 26px/35px 'Fauna One', Arial, sans-serif;
+        text-transform: none;
+    }
+    .slide-1.text-slide h2 span {
+        font: normal 44px/54px 'Fauna One', Arial, sans-serif;
+    }
+    .text-slide p {
+        position: absolute;
+        bottom: 115px;
+        font: 15px/23px "Fauna One",Arial,sans-serif;
+        margin-bottom: 30px;
+    }
+    .welcome-left {
+        float: none;
+        margin-right: 0;
+        padding-bottom: 30px;
+        width: auto;
+    }
+    .welcome-right {
+        float: none;
+        width: auto;
+    }
+    .welcome-left h3 {
+        font: 800 17px "Open Sans",Arial,sans-serif;
+        margin-bottom: 15px;
+    }
+    .welcome-left h2 {
+        font: 19px/30px "Fauna One",Arial,sans-serif;
+        margin-bottom: 25px;
+    }
+    .welcome-left .video-box h3 {
+        font: 18px "Fauna One",Arial,sans-serif;
+        margin-bottom: 5px;
+    }
+    .welcome-left .video-box p {
+        font: 700 11px/13px "Open Sans",Arial,sans-serif;
+    }
+    .video-box .slide-btn {
+        padding: 0 10px;
+    }
+    .box-photo {
+        height: 76px;
+        margin-right: 10px;
+        width: 76px;
+    }
+    .box-photo img {
+        height: 76px;
+        width: 76px;
+    }
+    .border-photo {
+        background: url("../images/photo-border-mobile.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+        height: 76px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 76px;
+        z-index: 1;
+    }
+    .bottom-tour h3 {
+        font: 800 17px/23px "Open Sans",Arial,sans-serif;
+    }
+    .bottom-tour h2  {
+        font: 22px/30px "special_eliteregular",Arial,sans-serif;
+    }
+    .home-video {
+        height: 160px;
+    }
+    .home-video .play, .image-story .play, .video-right .play, .video-img-int .play {
+        background: url("../images/play-mobile.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+        height: 76px;
+        margin-left: -33px;
+        margin-top: -33px;
+        width: 76px;
+    }
+    .education-dif {
+        margin-bottom: 40px;
+        padding: 40px 0;
+    }
+    .education-head h2 {
+        font: 800 17px "Open Sans",Arial,sans-serif;
+        margin-bottom: 10px;
+    }
+    .education-head p {
+        font: 24px/35px "Fauna One",Arial,sans-serif;
+    }
+    .education-item h2 {
+        font: 800 17px "Open Sans",Arial,sans-serif;
+        margin-bottom: 15px;
+    }
+    .education-item p {
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+        margin-bottom: 25px;
+    }
+    .education-item-over {
+        float: none;
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 280px;
+    }
+    .education-item {
+        width: 280px;
+    }
+    
+    #main .story-home .inner {
+        background: url("../images/story-home-bg.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0) !important;
+        min-height: 230px;
+        margin: 0 20px;
+        padding: 30px 20px;
+    }
+    .story-box {
+        background: url("../images/white-strory-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+        margin: 0 auto;
+        padding: 25px 0 35px;
+        width: auto;
+    }
+    .story-home-left {
+        float: none;
+        padding: 0 14px;
+        width: 100%;
+    }
+    .story-home-right {
+        background: url("../images/line-story-mobile.png") no-repeat center 20px;
+        float: none;
+        padding: 0 14px;
+        width: 100%;
+    }
+    .story-home-left h3 {
+        font: 30px "special_eliteregular",Arial,sans-serif;
+        margin-bottom: 20px;
+    }
+    .story-home-left p {
+        font: 14px/23px "Fauna One",Arial,sans-serif;
+    }
+    .story-home-right h2 {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+        margin-bottom: 20px;
+        padding: 40px 0 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .story-home-right .wp-post-image {
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .story-home-right-text {
+        margin-left: 0;
+    }
+    .story-home-right h3 {
+        font: 800 15px/24px "Open Sans",Arial,sans-serif;
+    }
+    .story-home-right p {
+        font: 13px/24px "Fauna One",Arial,sans-serif;
+    }
+    .story-home-right .slide-btn {
+        font-size: 17px;
+        line-height: 34px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+    /*==========================*/
+    
+    /*===== Our Approach =====*/
+    .page-image, .image-category {
+        height: 160px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .image-category h1, .image-category h2, .page-image h1 {
+        font: 800 30px/36px "Open Sans",Arial,sans-serif;
+        padding-top: 52px;
+    }
+    .search .image-category h1 {
+        padding-top: 52px;
+    }
+    .top-text h3 {
+        font: 23px/40px "Fauna One",Arial,sans-serif;
+    }
+    .top-text p {
+        font: 15px/24px "Fauna One",Arial,sans-serif;
+    }
+    .page-template-page-templatesresearch-page-php .our-story-left {
+        min-height: 441px;
+    }
+    .our-story-left {
+        float: none;
+        padding: 30px 0 0;
+        position: relative;
+        width: 100%;
+    }
+    .our-story-left h2 {
+        font: 24px/60px "Fauna One",Arial,sans-serif;
+    }
+    .our-story-left p {
+        font: 600 14px/20px "Open Sans",Arial,sans-serif;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    .our-story-left img {
+        margin-bottom: 30px;
+    }
+    .our-story-right {
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 50px 30px 25px;
+    }
+    .video-story {
+        bottom: 0;
+        display: block;
+        height: 160px;
+        left: 0;
+        position: relative;
+        width: 100%;
+    }
+    .our-instruction h2 {
+        font: 24px/40px "Fauna One",Arial,sans-serif;
+        margin-bottom: 30px;
+    }
+    .image-instruction {
+        float: none;
+        width: 100%;
+    }
+    .our-instruction .image-instruction img {
+        height: auto;
+    }
+    .text-instruction {
+        margin-left: 0;
+        padding: 15px 0 0 20px;
+    }
+    .we-learned {
+        padding: 40px 0 0;
+        overflow: visible;
+    }
+    .we-learned h2 {
+        font: 800 17px "Open Sans",Arial,sans-serif;
+    }
+    .we-learned h4 {
+        font: 24px/40px "Fauna One",Arial,sans-serif;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .box-learned-mobile {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 20px;
+        background-color: #4fc673;
+    }
+    .dropdown .dropdown-select {
+        display: block;
+        padding: 18px 20px;
+        margin-bottom: 20px;
+        font: 800 17px "Open Sans", Arial, sans-serif;
+        color: #ff8844;
+        background-color: #fff;
+        text-transform: uppercase;
+    }
+    .dropdown .caret {
+        display: inline-block;
+        float: right;
+        height: 0;
+        margin-right: 0px;
+        margin-top: 10px;
+        vertical-align: middle;
+        width: 0;
+    }
+    .dropdown .dropdown-select .caret{
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid;
+        border-bottom: medium none;
+        
+    }
+    .dropdown.open .dropdown-select .caret{
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid;
+        border-top: medium none;
+    }
+    .dropdown .dropdown-menu {
+        width: 100%;
+    }
+    .dropdown-menu > li > a {
+        color: #ff8844;
+        display: block;
+        font-weight: 800;
+        padding: 5px 20px;
+        text-transform: uppercase;
+    }
+    .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+        background-color: #ff8844;
+        color: #fff;
+    }
+    .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+        background-color: #ff8844;
+    }
+    .tab-content p {
+        font: 15px/24px "Fauna One",Arial,sans-serif;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    .programs {
+        padding: 20px 0 0;
+    }
+    .programs h2 {
+        font: 24px/40px "Fauna One",Arial,sans-serif;
+    }
+    .programs p {
+        font: 15px/24px "Fauna One",Arial,sans-serif;
+    }
+    .content-program {
+        padding: 20px 0;
+    }
+    .content-program ul {
+        width: 100%;
+    }
+    .content-program li {
+        font: 15px/24px "Fauna One",Arial,sans-serif;
+    }
+    .our-solution {
+        padding: 40px 0;
+    }
+    .solution-desc h3 {
+        font: 800 17px "Open Sans",Arial,sans-serif;
+    }
+    .solution-desc h2 {
+        font: 24px/40px "Fauna One",Arial,sans-serif;
+    }
+    .solution-box {
+        margin: 0 0 20px;
+        width: 100%;
+    }
+    .solution-image .solution-title {
+        font: 800 15px/17px "Open Sans",Arial,sans-serif;
+        height: 50px;
+    }
+    .solution-text {
+        font: 17px/24px "special_eliteregular",sans-serif;
+    }
+    
+    /* approach animation */
+    .images-all {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .imagery {
+        min-height: 525px;
+    }
+    .image-circle {
+        display: none;
+    }
+    .excerpt-bottom {
+        margin-top: 160px;
+    }
+    .excerpt-bottom p {
+        font: 15px/24px "Fauna One",Arial,sans-serif;
+    }
+    .images-all .image-bg {
+        height: 91px;
+        width: 305px;
+        margin: 0 auto;
+        background: url(../images/grafic-767.png) no-repeat 0 0 transparent !important;
+    }
+    .image-boy {
+        margin-left: 0;
+        padding-top: 91px;
+        width: 305px;
+    }
+    .image-girl {
+        width: 305px;
+        margin-left: 0px;
+        z-index: 1;
+    }
+    .im-boy {
+        left: -2px;
+        bottom: -130px;
+        height: 130px;
+        width: 146px;
+    }
+    .im-girl {
+        bottom: -130px;
+        right: -2px;
+        height: 130px;
+        width: 146px;
+    }
+    .im-boy.active {
+        bottom: -214px;
+        height: 249px;
+        left: 12px;
+        width: 280px;
+    }
+    
+    .im-girl.active {
+        bottom: -218px;
+        height: 249px;
+        right: 12px;
+        width: 280px;
+    }
+    
+    .boy-description, .girl-description {
+        padding: 0 46px;
+        background-color: #f1f0ec;
+        margin-bottom: 50px;
+    }
+    .close-boy {
+        background: url(../images/close-boy.png) no-repeat scroll 0 0 / cover;
+        background-size: 100% 100%;
+        cursor: pointer;
+        height: 60px;
+        position: absolute;
+        right: 25px;
+        top: 53px;
+        width: 60px;
+        z-index: 9;
+    }
+    .close-girl{
+        background: url(../images/close-girl.png) no-repeat 0 0 / cover;
+        background-size: 100% 100%;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        position: absolute;
+        top: 71px;
+        left: 235px;
+        z-index: 9;
+    }
+    .shit-plug {
+        background-color: #f1f0ec;
+        width: 20px;
+        height: 40px;
+        position: absolute;
+        top: 55px;
+        left: 58px;
+        z-index: 1;
+    }
+    .boy-title, .girl-title {
+        padding: 225px 15px 25px;
+        font: 15px/22px "special_eliteregular",sans-serif;
+    }
+    .text-boy {
+        background: none repeat scroll 0 0 transparent;
+        margin-left: -10px;
+        margin-right: -10px;
+        padding: 0px 10px 0;
+        overflow: hidden;
+        top: 0;
+        min-height: 100%;
+    }
+    .text-girl {
+        background: none repeat scroll 0 0 transparent;
+        margin-left: -10px;
+        margin-right: -10px;
+        padding: 0px 10px 0;
+        overflow: hidden;
+        top: 0;
+        min-height: 100%;
+    }
+    .text-boy h3, .text-girl h3{
+        font: 800 20px/25px "Open Sans",Arial,sans-serif;
+    }
+    .text-boy .slide-btn, .text-girl .slide-btn {
+        display: block;
+        line-height: 24px;
+        margin: 38px auto !important;
+        padding: 10px 25px;
+        text-align: center;
+        cursor: pointer;
+        width: 185px;
+    }
+    .text-boy p, .text-girl p {
+        margin-bottom: 20px;
+    }
+    .text-boy-image {
+        background-image: url(../images/boy-text-image-mobile.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 100% 100% !important;
+    }
+    .text-girl-image {
+        background-image: url(../images/girl-text-image-mobile.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 100% 100% !important;
+    }
+    .text-boy-image, .text-girl-image {
+        height: 213px;
+        width: 213px;
+    }
+    .text-boy-image-1 img, .text-boy-image-2 img, .text-boy-image-3 img,
+    .text-girl-image-1 img, .text-girl-image-2 img, .text-girl-image-3 img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .text-boy-image-1 {
+        top: 100px;
+        left: 0px;
+        width: 125px;
+    }
+    .text-boy-image-2 {
+        top: 10px;
+        left: 62px;
+        width: 90px;
+    }
+    .text-boy-image-3 {
+        top: 95px;
+        right: 0px;
+        width: 100px;
+    }
+    .text-girl-image-1 {
+        left: -23px;
+        top: 95px;
+        width: 105px;
+    }
+    .text-girl-image-2 {
+        top: 20px;
+        left: -7px;
+        width: 69px;
+    }
+    .text-girl-image-3 {
+        right: -10px;
+        top: 35px;
+        width: 77px;
+    }
+    /*--------------------*/
+    
+    /* Research page */
+    .gray-box h3 {
+        font: 18px/25px "Fauna One",Arial,sans-serif;
+    }
+    .gray-box h4 {
+        font: 800 12px/16px "Open Sans",Arial,sans-serif;
+    }
+    .gray-box p {
+        font: 12px/16px "Fauna One",Arial,sans-serif;
+    }
+    .quote-text {
+        padding: 0 30px;
+    }
+    .quote-research {
+        padding: 40px 0;
+    }
+    .testimonials-q-right, .testimonials-q-left {
+        height: 22px;
+        width: 26px;
+        background-size: 100% 100%;
+    }
+    .testimonials-q-left {
+        top: 0;
+    }
+    .testimonials-q-right {
+        bottom: -10px;
+    }
+    .quote-text p {
+        font: 15px/22px "Fauna One",Arial,sans-serif;
+    }
+    .reserch-desc {
+        margin-bottom: 0;
+    }
+    .reserch-desc h3 {
+        font: 800 17px/24px "Open Sans",Arial,sans-serif;
+    }
+    .reserch-desc h2 {
+        font: 24px/40px "Fauna One",Arial,sans-serif;
+        margin-bottom: 20px;
+    }
+    .reserch-desc p {
+        font: 15px/22px "Fauna One",Arial,sans-serif;
+    }
+    .child-article {
+        padding: 20px 0;
+    }
+    .research-img {
+        float: none;
+        width: 100%;
+    }
+    .research-txt {
+        margin-left: 0;
+        width: 100%;
+    }
+    .research-img img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+    .research-txt h2 {
+        font: 24px/30px "Fauna One",Arial,sans-serif;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    .research-txt p {
+        font: 14px/22px "Fauna One",Arial,sans-serif;
+        margin-bottom: 25px;
+    }
+    .ages {
+        padding: 30px 0;
+    }
+    .child-ages {
+        padding: 60px 25px;
+        background: url("../images/story-home-bg.jpg") no-repeat scroll center center / cover !important;
+    }
+    .inner-ages h3 {
+        font: 24px "special_eliteregular",Arial,sans-serif;
+    }
+    .inner-ages h4 {
+        font: 15px/22px "Fauna One",Arial,sans-serif;
+    }
+    .percentile-wrap, .grade-wrap {
+        margin-bottom: 20px;
+    }
+    .percentile-wrap .tab-title, .grade-wrap .tab-title {
+        width: 170px;
+        margin: 20px auto;
+        padding: 15px 20px;
+        font: 800 19px/19px 'Open Sans', Arial, sans-serif;
+        position: relative;
+        text-transform: uppercase;
+        background: #fff;
+        background-size: 100% 200%;
+        background-image: linear-gradient(to bottom, #fff 50%, #45B0DA 50%);
+        -webkit-transition: al 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+        color: #5caaca;
+    }
+    .percentile-wrap .tab-title:hover, .grade-wrap .tab-title:hover, 
+    .percentile-wrap .tab-title:focus, .grade-wrap .tab-title:focus {
+        background-position: 0 100%;
+        color: #fff;
+    }
+    .grade-wrap img{
+        max-width: 100%;
+    }
+    .text-tab {
+        width: 100%;
+    }
+    /*results*/
+    .blog-post, .article-post {
+        padding: 0 0 35px;
+    }
+    .blog-content {
+        float: none;
+        width: 100%;
+    }
+    #sidebar2 {
+        background-color: #f0eeea;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 25px 20px;
+    }
+    .blog-content {
+       padding-top: 30px; 
+    }
+    .archive-description h2 {
+        font: 24px/40px "Fauna One",Arial,sans-serif;
+    }
+    .archive-description p {
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+    }
+    .archive-description h3 {
+        font: 24px/30px "Fauna One",Arial,sans-serif;
+    }
+    .archive-description img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .article-text h2 {
+        font: 800 20px/26px "Open Sans",Arial,sans-serif;
+        margin-bottom: 15px;
+    }
+    .article-text p {
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+        margin-bottom: 25px;
+        margin-top: 5px;
+    }
+    .article-text p.cat-posts {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .article-text .addthis_default_style .at300b,
+    .article-text .addthis_default_style .at300bo,
+    .article-text .addthis_default_style .at300m,
+    .content-article .share.hidden-sm{
+        padding: 0 7px;
+    }
+    /*  Articles */
+    .content-article .post-title {
+        font: 24px/40px "Fauna One",Arial,sans-serif;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .content-post, .content-article {
+        float: none;
+        width: auto;
+    }
+    .content-article h3 {
+        font: 21px/27px "Fauna One",Arial,sans-serif;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    .content-article p {
+        font: 15px/22px "Fauna One",Arial,sans-serif;
+    }
+    
+    /* Blog */
+    .nextpostslink, .previouspostslink {
+        font: 800 13px/38px "Open Sans",Arial,sans-serif;
+    }
+    .page-navigation .page {
+        padding: 0 10px;
+        font: 21px/38px "Fauna One",Arial,sans-serif;
+    }
+    .page-navigation .current {
+        font: 20px/38px "Fauna One",Arial,sans-serif;
+        width: 38px;
+    }
+    .blog-image {
+        float: none;
+        width: 100%;
+    }
+    .blog-text, .content-post {
+        position: relative;
+        margin-left: 0px;
+        padding-top: 20px;
+    }
+    .blog-post .post-categories {
+        display: block;
+        position: absolute;
+        top: -37px;
+    }
+    .date-blog {
+        font: 18px "Fauna One",Arial,sans-serif;
+    }
+    .blog-text h2, .nothing h3, .content-post .post-title {
+        font: 24px/34px "Fauna One",Arial,sans-serif; 
+    }
+    .blog-text h2 {
+        margin-bottom: 5px;
+    }
+    .count-comment {
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+    }
+    .blog-text p {
+        margin-bottom: 50px;
+    }
+    .content-post .post-categories {
+        position: static;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        list-style: none;
+    }
+    .content-post ul.post-categories li {
+        padding-left: 0;
+        background: none;
+    }
+    .content-post .time-post {
+        font: 16px "Fauna One",Arial,sans-serif;
+        color: #4fc673;
+    }
+    .content-post .share.hidden-sm {
+        margin: 25px 0;
+    }
+    .content-post p{
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+    }
+    .content-post p img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .content-post h4 {
+        font: 17px/25px "Fauna One",Arial,sans-serif;
+    }
+    .content-post ul li {
+        font: 13px/27px "Fauna One",Arial,sans-serif;
+    }
+    .post-tag{
+        margin-bottom: 30px;
+    }
+    .post-tag span {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .post-tag a {
+        font: 12px/20px "Fauna One",Arial,sans-serif;
+    }
+    /*comments*/
+    .comments-title {
+        font: 24px/60px "Fauna One",Arial,sans-serif;
+    }
+    .comment-head {
+        position: static;
+        background: none;
+        padding-right: 0;
+        width: 100%;
+    }
+    .comment-content {
+        margin-left: 0;
+        padding: 18px 15px;
+    }
+    .children {
+        margin-left: 30px;
+    }
+    .children .comment-head, .children .children .comment-head,
+    .children .children .children .comment-head
+    {
+        width: 100%;
+        height: 112px;
+    }
+    .children .comment-content, .children .children .comment-content,
+    .children .children .children .comment-content
+    {
+        margin-left: 0;
+    }
+    .children .comment-content {
+        margin-left: 0;
+    }
+    #reply-title {
+        font: 800 17px "Open Sans",Arial,sans-serif;
+        margin-bottom: 15px;
+        width: auto;
+        float: none;
+    }
+    #commentform {
+        float: none;
+        width: auto;
+    }
+    #commentform input[type="text"], #commentform input[type="email"],
+    #commentform input[type="url"], #commentform textarea,
+    .contact-form input[type="text"], .contact-form input[type="email"],
+    .contact-form input[type="url"], .contact-form textarea {
+        width: 100%;
+    }
+    .captcha span {
+        float: none;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    #commentform #easy_captcha_captcha_simple {
+        float: none;
+        width: 100%;
+    }
+    #submit {
+        font: 800 17px/48px "Open Sans",Arial,sans-serif;
+    }
+    .related-posts h2 {
+        font: 24px/40px "Fauna One",Arial,sans-serif;
+        margin-bottom: 25px;
+    }
+    .related-posts .related-row-1,
+    .related-posts .related-row-3,
+    .related-posts .related-row-5,
+    .related-posts .related-row-7,
+    .related-posts .related-row-9{
+        margin-right: 3.999%;
+    }
+    .related-row {
+        float: left;
+        width: 47.999%;
+        min-width: 130px;
+    }
+    .mini-img {
+        float: none;
+        text-decoration: none;
+        width: 100%;
+    }
+    .mini-img img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+    }
+    .date-related {
+        font: 15px/36px "Fauna One",Arial,sans-serif;
+    }
+    .text-related {
+        margin-left: 0;
+    }
+    .text-related h3 {
+        font: 15px/21px "Fauna One",Arial,sans-serif;
+        margin-top: 15px;
+    }
+    .text-related p {
+        display: none;
+    }
+    
+    /* Learning Center page */
+    
+    .top-text-learning h3 {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+    }
+    .top-text-learning p {
+        font: 18px/40px "Fauna One",Arial,sans-serif;
+    }
+    .top-text-learning h4, .top-text-learning h2 {
+        font: 24px/35px "Fauna One",Arial,sans-serif;
+    }
+    .learning-green h2 {
+        font: 24px/35px "Fauna One",Arial,sans-serif;
+    }
+    .learning-green h3 {
+        font: 800 17px "Open Sans",Arial,sans-serif;
+    }
+    .learning-images .learning-image-2, .learning-images .learning-image-3,
+    .learning-images .learning-image-4, .learning-images .learning-image-5, .learning-images .learning-image-6, .learning-images .learning-image-7,
+    .learning-images .learning-image-8, .learning-images .learning-image-9, .learning-images .learning-image-10, .learning-images .learning-image-11{
+        display: none;
+    }
+    .learning-gray-left h3, .learning-gray-right h3 {
+        font: 800 17px "Open Sans",Arial,sans-serif;
+    }
+    .learning-gray-left p, .learning-gray-right p {
+        font: 16px/26px "Fauna One",Arial,sans-serif;
+    }
+    .title-slide {
+        font: 800 16px/25px "Open Sans",Arial,sans-serif;
+    }
+    h1.expect-title {
+        font: 24px/35px "Fauna One",Arial,sans-serif;
+        margin-bottom: 15px;
+    }
+    .text-expect h2 {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+    }
+    .text-expect h4 {
+        font: 19px/25px "Fauna One",Arial,sans-serif;
+    }
+    .text-expect p {
+        font: 15px/24px "Fauna One",Arial,sans-serif;
+    }
+    .instraction-desc h2 {
+        font: 24px/34px "Fauna One",Arial,sans-serif;
+    }
+    .instraction-title li {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+    }
+    .instraction-left h3, .instraction-right h3 {
+        font: 800 20px/30px "Open Sans",Arial,sans-serif;
+    }
+    .instraction-left p, .instraction-right p {
+        font: 14px/25px "Fauna One",Arial,sans-serif;
+    }
+    .learning-images-row div {
+        height: 160px;
+        display: block;
+        width: 50%;
+        float: left;
+    }
+    .learning-gray-left, .learning-gray-right {
+        padding: 80px 6% 40px;
+        width: 99%;
+    }
+    .learning-gray-left {
+        margin-bottom: 20px;
+    }
+    .expect .slides {
+        overflow: hidden;
+    }
+    .image-expect {
+        float: none;
+        height: 197px;
+        max-height: 197px;
+        padding: 35px 0 80px;
+        width: 100%;
+    }
+    .text-expect {
+        margin-left: 0;
+        padding: 35px 20px 80px;
+    }
+    .expect .flex-control-nav {
+        margin-left: -120px;
+    }
+    .expect .flex-control-nav li a {
+        background: #78caea;
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+        color: #fff;
+        padding: 6px;
+        text-align: center;
+        text-indent: 0;
+        font: 20px "Fauna One",Arial,sans-serif;
+    }
+    .expect .flex-control-nav li a.flex-active {
+        background: #fbd608;
+    }
+    .instraction {
+        padding: 30px 0;
+    }
+    .instraction-left {
+        float: none;
+        height: 251px;
+        overflow: hidden;
+        padding: 20px 20px 30px 25px;
+        width: 280px;
+    }
+    .instraction-right {
+        height: 315px;
+        margin-left: 0;
+        padding: 58px 20px 15px 25px;
+        width: 280px;
+    }
+    .instraction-box {
+        background: url(../images/instruction-mobile.png) repeat-y scroll 0 0 rgba(0, 0, 0, 0);
+        margin: 0 auto;
+        width: 280px;
+    }
+    .instraction-box.active, .instraction-box.active:first-child {
+        display: block;
+    }
+    .instraction-box:first-child {
+        display: none;
+    }
+    .instraction-title li {
+        margin: 0 15px;
+    }
+    .instraction-desc-mobile {
+        margin-bottom: 0;
+        padding: 30px 0 0;
+        background: url(../images/bg_blue.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    }
+    .instraction-desc-mobile .dropdown-select {
+        margin: 0 auto;
+        width: 280px;
+    }
+    .instraction-desc-mobile .dropdown-menu {
+        margin-left: -140px;
+        left: 50%;
+        width: 280px;
+    }
+    .instraction .slide-btn {
+        font: 800 17px "Open Sans",Arial,sans-serif;
+        padding: 10px 35px;
+        margin: 30px auto 0;
+        width: 280px;
+    }
+    
+    /* locations */
+    .left-location h2 {
+        font: 800 17px/22px "Open Sans",Arial,sans-serif;
+    }
+    .left-location p {
+        font: 24px/38px "Fauna One",Arial,sans-serif;
+        margin-bottom: 0;
+    }
+    .location-title {
+        font: 24px/38px "Fauna One",Arial,sans-serif;
+        margin-bottom: 30px;
+    }
+    .location-row h4 {
+        font: 800 11px/30px "Open Sans",Arial,sans-serif;
+    }
+    .location-row li {
+        font: 13px/30px "Fauna One",Arial,sans-serif;
+    }
+    .location-row p strong {
+        font: 800 12px/25px "Open Sans",Arial,sans-serif;
+    }
+    .location-column {
+        float: left;
+        margin-right: 2%;
+        width: 48%;
+    }
+    .left-location {
+        float: left;
+        width: auto;
+    }
+    .right-location {
+        float: left;
+        margin-left: 0;
+        padding-bottom: 25px;
+        width: auto;
+    }
+    .right-location input[type="text"] {
+        width: 235px;
+    }
+    .winPhone .right-location input[type="text"] {
+        width: 80%;
+    }
+    .location-row {
+        padding-top: 30px;
+    }
+    #map_canvas {
+        height: 478px !important;
+    }
+    .address-map p a, .yelp a {
+        color: #ff8844;
+        display: block;
+    }
+    
+    /*locations inner*/
+    .title-location {
+        font: 800 20px/64px "Open Sans",Arial,sans-serif;
+    }
+    .content-detail-location h2 {
+        font: 24px/34px "Fauna One",Arial,sans-serif;
+    }
+    .content-detail-location p {
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+    }
+    .location-info {
+        font: 800 17px/60px "Open Sans",Arial,sans-serif;
+    }
+    .location-info-text p {
+        font: 14px/22px "Fauna One",Arial,sans-serif;
+    }
+    .location-info-text li {
+        font: normal 12px/16px 'Fauna One', Arial, sans-serif;
+    }
+    .location-info-text br {display: none;}
+    .location-info-text ul {width: auto;}
+    .affiliations h2 {
+        font: 24px/60px "Fauna One",Arial,sans-serif;
+        margin-bottom: 30px;
+    }
+    .location-info-text {
+        padding: 30px 30px 0 30px;
+    }
+    .content-detail-location {
+        padding: 30px 0 30px;
+    }
+    .logo-location {
+        height: 110px;
+        width: 110px;
+        left: -50px;
+        background-size: cover;
+    }
+    .gallery-location {
+        padding: 0 20px;
+    }
+    .gallery-location .slides li {
+        height: 190px;
+        width: 280px;
+        margin: 0 20px 0 0;
+    }
+    .gallery-location .slides li .caption {
+        font: normal 16px/60px 'Fauna One', Arial, sans-serif;
+        bottom: 0;
+    }
+    .location-video {
+        padding: 40px 0;
+    }
+    .location-video-left {
+        padding-top: 0;
+        float: none;
+        width: 280px;
+        margin: 0 auto;
+    }
+    .location-video-right {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 45px;
+        max-width: 280px;
+    }
+    .location-video-left img{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    #map_location {
+        height: 550px;
+    }
+    .detail-information {
+        left: 50%;
+        margin-left: -112px;
+        position: absolute;
+        top: 220px;
+        width: 225px;
+        z-index: 99;
+    }
+    .single-location .related-posts {
+        padding: 35px 0;
+    }
+    .affiliations {
+        padding: 35px 0;
+    }
+    .affiliations .inner {
+        overflow: hidden;
+    }
+    .affiliations a {
+        float: left;
+        margin-left: 0;
+        margin-right: 2%;
+        width: 48%;
+        height: 70px;
+        margin-bottom: 15px;
+    }
+    .affiliations a img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    /* FAQ page */
+    .page-template-page-templatesfaq-page-php .top-text h4 {
+        font: 800 17px "Open Sans",Arial,sans-serif;
+    }
+    .page-template-page-templatesour-approach-page-php .top-text, .page-template-page-templatesfaq-page-php .top-text {
+        padding-top: 50px;
+        padding-bottom: 35px;
+    }
+    .answer h3 span {
+        font: 800 18px/35px "Open Sans",Arial,sans-serif;
+    }
+    .top-text h3 {
+        margin-bottom: 0;
+    }
+    .answer p {
+        font: 16px/25px "Fauna One",Arial,sans-serif;
+    }
+    .answer .answer-right p {
+        font: 16px/25px "Fauna One",Arial,sans-serif;
+    }
+    .answer .answer-right h2 {
+        font: 28px "Fauna One",Arial,sans-serif;
+    }
+    .faqs .desc {
+        font: 24px/35px "Fauna One",Arial,sans-serif;
+        padding: 45px 0;
+    }
+    .title-faq span {
+        font: 800 16px/24px "Open Sans",Arial,sans-serif;
+        padding: 10px;
+    }
+    .inner-faq h4 {
+        font: 16px/27px "Fauna One",Arial,sans-serif;
+        margin-bottom: 30px;
+    }
+    .inner-faq p {
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+    }
+    .answer .inner {
+        background: url(../images/note-mobile.png) no-repeat scroll center top rgba(0, 0, 0, 0);
+        padding-bottom: 60px;
+        padding-top: 35px;
+    }
+    .answer h3 {
+        margin-bottom: 25px;
+    }
+    .answer-left {
+        float: none;
+        width: 280px;
+        height: 190px;
+        margin: 0 auto;
+        padding: 0 20px 0 20px;
+        overflow: hidden;
+    }
+    .answer-right {
+        float: none;
+        width: 280px;
+        margin: 0 auto;
+        padding: 85px 20px 0 20px;
+    }
+    .faq {
+        width: 100%;
+        margin: 0 auto 20px;
+        background: url(../images/bg_light_grey.jpg) repeat-y scroll 0 0 rgba(0, 0, 0, 0);
+    }
+    .faq-left {
+        margin: 0 auto 20px;
+    }
+    .inner-faq {
+        background: url(../images/list-faq.png) no-repeat scroll 10px 13px rgba(0, 0, 0, 0);
+    }
+    
+    /* Evaluation */
+     .evaluation-green h2 {
+        font: 24px/35px "Fauna One",Arial,sans-serif;
+    }
+    .process li {
+        font: 14px/20px "special_eliteregular",Arial,sans-serif;
+    }
+    .lenta {
+        font: 800 17px/70px "Open Sans",Arial,sans-serif;
+    }
+    .test-text h3 {
+        font: 700 17px "Open Sans",Arial,sans-serif;
+        margin-top: 20px;
+    }
+    .test-text p {
+        font: 18px/30px "Fauna One",Arial,sans-serif;
+    }
+    .test-name {
+        font: 20px/20px "Fauna One",Arial,sans-serif;
+    }
+    .test-description {
+        font: 700 10px/19px "Open Sans",Arial,sans-serif;
+    }
+    .skill-box h2 {
+        font: 24px/40px "Fauna One",Arial,sans-serif;
+    }
+    .skill-text li {
+        font: 16px/27px "special_eliteregular",Arial,sans-serif;
+    }
+    .bottom-evaluation-left-inner h3 {
+        font: 800 17px/38px "Open Sans",Arial,sans-serif;
+    }
+    .bottom-evaluation-left-inner h4 {
+        font: 20px/38px "Fauna One",Arial,sans-serif;
+    }
+    .bottom-evaluation-left-inner h4 strong {
+        font-size: 16px;
+    }
+    .bottom-evaluation-left-inner p {
+        font: 14px/22px "Fauna One",Arial,sans-serif;
+    }
+    .bottom-evaluation-left-inner h5 {
+        font: 800 17px/38px "Open Sans",Arial,sans-serif;
+    }
+    #main .evaluation-green .inner {
+        width: 100%;
+        padding: 0;
+    }
+    .evaluation {
+        padding: 55px 0px;
+    }
+    .lenta {
+        background: url(../images/lenta-mobile.png) no-repeat 0 0;
+        width: 226px;
+        margin: 0 auto;
+        display: block;
+        font: 800 19px/33px 'Open Sans', Arial, sans-serif;
+    }
+    .process {
+        margin: 0 auto;
+        width: 280px;
+    }
+    .testimonials-box {
+        padding: 25px 0;
+    }
+    .test-images {
+        float: none;
+        margin: 0 auto;
+        width: 40%;
+    }
+    .test-text {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 30px;
+    }
+    .test-text .testimonials-q-left {
+        top: 20px;
+    }
+    .test-text .testimonials-q-right {
+        bottom: 60px;
+    }
+    .skill-image {
+        float: none;
+        margin: 0;
+        width: auto;
+    }
+    .skill-text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .bottom-evaluation-left {
+        float: none;
+        padding: 40px 20px;
+        width: auto;
+    }
+    .bottom-evaluation-left-inner {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+    }
+    .bottom-evaluation-right {
+        margin-left: 0;
+        padding: 40px 20px 25px;
+        width: auto;
+    }
+    .bottom-evaluation-right-inner {
+        float: none;
+        padding-left: 0;
+        width: auto;
+    }
+    .bottom-evaluation-right-inner img {
+        display: block;
+        max-width: 100%;
+        margin: 45px auto 50px;
+    }
+    .bottom-evaluation-right .home-video {
+        height: 160px;
+        margin: 0 auto 50px;
+        width: 280px;
+    }
+    .bottom-evaluation-right .home-video .play, .video-right .play {
+        background: url(../images/play-2-mobile.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    }
+    
+    /* Instruction */
+    .top-text-instr h2 {
+        font: 24px/40px "Fauna One",Arial,sans-serif;
+    }
+    .top-text-instr p {
+        font: 15px/25px "Fauna One",Arial,sans-serif;
+    }
+    .top-text-instr h4 {
+        font: 15px/25px "Fauna One",Arial,sans-serif;
+    }
+    .instruction-blue h2 {
+        font: 24px/34px "Fauna One",Arial,sans-serif;
+    }
+    .instruction-blue p {
+        font: 15px/20px "Fauna One",Arial,sans-serif;
+    }
+    .box-chage h3 {
+        font: 17px/24px "special_eliteregular",sans-serif;
+    }
+    .note-title h3 {
+        font: normal 20px "Fauna One",Arial,sans-serif !important;
+    }
+    .note-title h3 span {
+        font: 800 24px "Open Sans",Arial,sans-serif !important;
+    }
+    .note-box li {
+        font: 14px/22px "Fauna One",Arial,sans-serif;
+    }
+    .success-title h3 span {
+        font: 800 24px "Open Sans",Arial,sans-serif;
+    }
+    .success-left p {
+        font: 24px/34px "Fauna One",Arial,sans-serif;
+    }
+    .top-text-instr h4 em {
+        top: 0;
+    }
+    .top-text-instr {
+        padding: 35px 0;
+    }
+    .instruction-blue {
+        padding: 30px 0;
+    }
+    .box-chage {
+        display: block;
+        float: none;
+        margin: 0 auto 20px;
+        width: 280px;
+    }
+    .box-chage span {
+        height: 130px;
+    }
+    .box-chage h3 {
+        padding-bottom: 20px;
+    }
+    .note-instruction {
+        padding: 20px 0;
+    }
+    .note-box {
+        background: url(../images/bg_grey1.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+        width: 100%;
+        float: none;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 13px 25px 20px 30px;
+    }
+    .note-box li {
+        margin-bottom: 20px;
+    }
+    .inner-note {
+        background: url(../images/list-faq.png) no-repeat scroll 6px 0 rgba(0, 0, 0, 0);
+    }
+    .note-title {
+        border-radius: 50%;
+        float: none;
+        height: 150px;
+        margin: 0 auto;
+        width: 150px;
+    }
+    .note-text {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .success-section .inner {
+        margin: 0;
+        width: auto;
+        padding: 35px 20px 40px;
+    }
+    .success-title {
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+    }
+    .success-title h3 {
+        padding-top: 48px;
+    }
+    .success-left {
+        float: none;
+        margin: 0 auto;
+        width: 236px;
+    }
+    .success-right {
+        margin-left: auto;
+        padding: 0;
+    }
+    .success-right img {
+         margin: 30px auto 20px;
+    }
+    .ler-cent {
+        display: block;
+        background: url(../images/app-ev.png) no-repeat scroll center top rgba(0, 0, 0, 0);
+        font: 800 17px/21px "Open Sans",Arial,sans-serif;
+        height: 56px;
+        width: 229px;
+        margin: 0 auto;
+        padding-top: 5px;
+    }
+    .ler-cent:hover, .ler-cent:focus {
+        background-position: center bottom;
+    }
+    
+    /* we beleieve */
+        .about-top h2 {
+        font: 800 17px/20px "Open Sans",Arial,sans-serif;
+        margin-bottom: 10px;
+    }
+    .about-top h3 {
+        font: 24px/30px "Fauna One",Arial,sans-serif;
+    }
+    .about-top p {
+        font: 15px/25px "Fauna One",Arial,sans-serif;
+    }
+    .belive-title, .about-title, .founders-title, .timeline-title {
+        font: 24px/34px "Fauna One",Arial,sans-serif;
+        margin-bottom: 20px;
+    }
+    .left-belive h3 {
+        font: 800 17px "Open Sans",Arial,sans-serif;
+    }
+    .right-belive h4 {
+        font: 18px/24px "Fauna One",Arial,sans-serif;
+    }
+    .about p {
+        font: 14px/22px "Fauna One",Arial,sans-serif;
+        margin-bottom: 30px;
+    }
+    .about p {
+        font: 14px/22px "Fauna One",Arial,sans-serif;
+        margin-bottom: 20px;
+    }
+    .first-founder h3, .about-founder h3 {
+        font: 24px/60px "Fauna One",Arial,sans-serif;
+        padding-bottom: 30px;
+    }
+    .text-founder p {
+        font: 14px/22px "Fauna One",Arial,sans-serif;
+    }
+    .graphic {
+        height: 1270px;
+        background-size: cover;
+    }
+    .graphic img {
+        display: block;
+        width: 320px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .left-belive {
+        float: none;
+        padding: 35px 20px 30px;
+        margin-bottom: 20px;
+        width: auto;
+    }
+    .belives-inner {
+        margin: 0;
+    }
+    .right-belive {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 0 35px;
+    }
+    .right-belive img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .right-belive h4, .right-belive p {
+        padding: 0 30px;
+    }
+    .right-belive p:first-child {
+        padding: 0;
+    }
+    .about {
+        padding: 30px 0 10px;
+    }
+    .about img.alignleft {
+        margin-right: auto;
+        margin-left: auto;
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        padding-bottom: 25px;
+    }
+    #main .timeline .inner {padding-left: 0; padding-right: 0;}
+    .timeline-post {
+        margin: 0 10px;
+    }
+    .timeline-post .event{
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 260px;
+    }
+    .timeline-post .event .event-image img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .text-timeline {
+        padding: 15px 10px;
+    }
+    .year-line {
+        background: url(../images/year-mobile.png) no-repeat scroll center 0 rgba(0, 0, 0, 0);
+        font: 14px/39px "Fauna One",Arial,sans-serif;
+        height: 39px;
+        left: 50%;
+        margin-left: -22px;
+        position: absolute;
+        text-align: center;
+        top: -10px;
+        width: 44px;
+    }
+    .timeline-post li.active .year-line {
+        background: url(../images/year-active-mobile.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+        font-size: 15px;
+        height: 47px;
+        width: 56px;
+        margin-left: -28px;
+    }
+    .timeline-post .direction-nav .flex-prev {
+        background-position: left top;
+        left: 0px;
+    }
+    .timeline-post .direction-nav .flex-next {
+        background-position: right top;
+        right: 0px;
+    }
+    .timeline {
+        padding: 30px 0;
+    }
+    .table-line {
+        width: auto;
+        display: block;
+        overflow: auto;
+    }
+    .years {
+        display: block;
+    }
+    .year-item {width: 102px;}
+    .year-item:first-child{margin-left: 0;}
+    .table-cell {background: url(../images/timeline-img.jpg) repeat-x 0 65px; height: 90px;}
+    .box-founder img {
+        width: 160px;
+    }
+    .founders {
+        padding: 30px 0 35px;
+    }
+    .first-founder {
+        width: 280px;
+    }
+    .founder-1 {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .photo-founder {
+        float: none;
+        width: auto;
+    }
+    .text-founder {
+        margin-left: 0;
+        margin-top: 20px;
+        padding-right: 0;
+        text-align: left;
+        padding-bottom: 30px;
+    }
+    .founder-close {
+        display: block;
+        margin-right: -27px;
+        margin-top: -10px;
+        right: 50%;
+        top: 100%;
+    }
+    
+    /* int conference */
+    .content-international h2 {
+        font: 800 19px "Open Sans",Arial,sans-serif;
+        margin-bottom: 0;
+    }
+    .content-international h3 {
+        font: 24px/60px "Fauna One",Arial,sans-serif;
+        margin-bottom: 0;
+    }
+    .content-international p {
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+    }
+    .conf-tab li {
+        font: 800 19px/20px "Open Sans",Arial,sans-serif;
+        padding: 15px 5px;
+    }
+    .mens-row h3 {
+        font: 20px/40px "Fauna One",Arial,sans-serif;
+    }
+    .mens-row h2 {
+        font: 19px/26px "Fauna One",Arial,sans-serif;
+    }
+    .mens-row p {
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+    }
+    .years-conference {
+        margin: 0 auto 20px;
+        width: 280px;
+    }
+    .box-image img {
+        height: auto;
+        width: 160px;
+    }
+    .international-video {
+        overflow: hidden;
+    }
+    .int-video-left {
+        float: none;
+        padding-top: 0;
+        text-align: center;
+        width: auto;
+    }
+    .int-video-right {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .conference-info {
+        padding: 20px 0;
+    }
+    #view.inner {
+        padding-left: 0;
+        padding-right: 0;
+        width: 280px;
+    }
+    #view.inner .inner {
+        width: 280px;
+        padding: 0;
+    }
+    .box-image {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        width: 280px;
+    }
+    .box-text {
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        padding:0 20px;
+    }
+    .style-2 {
+        font: 800 18px/26px "Open Sans",Arial,sans-serif;
+        margin-left: 0;
+        padding: 10px 25px;
+    }
+    .style-1 {
+        background: url(../images/app-ev.png) no-repeat 0 0;
+        width: 229px;
+        height: 56px;
+        font: 800 18px/26px 'Open Sans', Arial, sans-serif;
+    }
+    .int-slider {
+        height: 300px;
+        overflow: visible;
+        margin-bottom: 60px;
+        clear: both;
+        float: none;
+        position: relative;
+    }
+    .int-slider .flex-viewport li {
+        height: 300px;
+    }
+    .int-slider .flex-direction-nav {
+        display: none;
+    }
+    .int-slider ol.flex-control-nav  {
+        bottom: 30px;
+        left: 50%;
+        margin-left: -40px;
+        margin-top: 0;
+        position: absolute;
+    }
+    /* int conferences slider*/
+    .years-conference .dropdown .dropdown-select {
+        margin-bottom: 0;
+    }
+    .years-conference .slides.dropdown-menu li {
+        font: 700 17px/38px "Open Sans",Arial,sans-serif;
+        text-align: left;
+        float: none;
+        color: #21242c;
+        width: auto;
+        padding: 0 20px;
+    }
+    .years-conference .slides li.active {
+        font: 700 17px/38px "Open Sans",Arial,sans-serif;
+        color: #fff;
+        background-color: #ff8844;
+    }
+    .dropdown .conf-tab {
+        margin-bottom: 0;
+    }
+    .dropdown .conf-tab li {
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+        font: 700 17px/38px "Open Sans",Arial,sans-serif;
+        padding: 0 20px;
+        text-align: left;
+        margin: 0;
+        width: auto;
+        display: block;
+        color: #21242c;
+    }
+    .dropdown .conf-tab li.active {
+        font: 700 17px/38px "Open Sans",Arial,sans-serif;
+        color: #fff;
+        background-color: #ff8844;
+    }
+    
+    /* Contact Us */
+    .contact-content h2 {
+        font: 34px "Fauna One",Arial,sans-serif;
+    }
+   
+    .contact-content p {
+        font: 700 15px "Open Sans",Arial,sans-serif;
+    }
+    .contact-content {
+        padding: 40px 0 50px;
+    }
+    .custom-form {
+        margin: 0 auto;
+        width: auto;
+        overflow: hidden;
+    }
+    .custom-form .mktoForm{
+        width: 100% !important;
+    }
+    .mktoForm.mktoLayoutAbove .mktoField, .mktoForm.mktoLayoutAbove .mktoLogicalField, .mktoHtmlText.mktoHasWidth {
+        width: 100% !important;
+    }
+    .mktoForm input[type="url"], .mktoForm input[type="text"],
+    .mktoForm input[type="date"], .mktoForm input[type="tel"],
+    .mktoForm input[type="email"], .mktoForm input[type="number"],
+    .mktoForm textarea.mktoField, .mktoForm select.mktoField {
+        width: 100% !important;
+    }
+    .mktoForm .mktoFormCol .mktoLabel {
+        width: 100% !important;
+    }
+    .mktoForm .mktoButtonRow {
+        text-align: center;
+        width: 100%;
+    }
+    .mktoButtonRow .mktoButtonWrap.mktoSimple {
+        margin-left: auto !important;
+        margin-right: auto;
+        width: 138px;
+    }
+    
+    /* Get Started */
+    .get-started h2 {
+        font: 24px "Fauna One",Arial,sans-serif;
+    }
+    .step-2, .step-3 {
+        font: 20px/28px "Fauna One",Arial,sans-serif;
+    }
+    .left-gets {
+        width: auto;
+        float: none;
+        margin-bottom: 40px;
+        padding: 40px 0 20px;
+    }
+    .get-started h2 {
+        background: url(../images/step-1.png) no-repeat scroll center top rgba(0, 0, 0, 0);
+        padding-left: 0;
+        padding-top: 120px;
+        
+    }
+    .top-get-bg {
+        background: url(../images/get-mobile.png) no-repeat scroll center 0 rgba(0, 0, 0, 0);
+        height: 48px;
+        left: 50%;
+        top: -35px;
+        margin-left: -140px;
+        margin-right: auto;
+        width: 280px;
+    }
+    .right-gets {
+        margin-left: 0;
+        overflow: hidden;
+    }
+    .step-2, .step-3 {
+        width: auto;
+        float: none;
+        overflow: hidden;
+        min-height: 100%;
+    }
+    .step-2 {
+        margin-right: 2%;
+    }
+    .step-2 img, .step-3 img {
+        float: none;
+        margin: 0 auto 20px;
+    }
+    .steps-text {
+        padding: 5px 20px 0;
+        text-align: center;
+    }
+    
+    /* Privacy Policy  */
+    .text-privacy h2 {
+        font: 24px/40px "Fauna One",Arial,sans-serif;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .text-privacy h3 {
+        color: #21242c;
+        font: 17px/22px "Fauna One",Arial,sans-serif;
+    }
+    .text-privacy p {
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+    }
+    .text-privacy ol li {
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+    }
+    .text-privacy li strong, .text-privacy p strong {
+        font: 700 15px/30px "Fauna One",Arial,sans-serif;
+    }
+    .text-privacy ol > li:before, .text-privacy ol > li .list-item-before {
+        font: 17px/30px "Fauna One",Arial,sans-serif;
+    }
+    .side-privacy li a {
+        font: 800 13px/22px "Open Sans",Arial,sans-serif;
+    }
+    .box-privacy {
+        padding: 0 0 40px;
+    }
+    #privacy-dropdown .dropdown-select{
+        color: #21242c;
+        margin-bottom: 0;
+    }
+    #privacy-dropdown .dropdown-select .caret{
+        color: #ff8844;
+    }
+    .text-privacy {
+        float: none;
+        width: auto;
+    }
+    .side-privacy {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Our programs */
+    .program-title h2 {
+        font: 24px/35px "Fauna One",Arial,sans-serif;
+    }
+    .top-program h3 {
+        font: 18px "Fauna One",Arial,sans-serif;
+    }
+    .top-program p {
+        font: 15px/22px "Fauna One",Arial,sans-serif;
+    }
+    .box-program-title {
+        font: 800 17px/23px "Open Sans",Arial,sans-serif;
+    }
+    .box-program-text p {
+        font: 14px/22px "Fauna One",Arial,sans-serif;
+    }
+    .box-program-text h4 {
+        font: 14px/22px "Fauna One",Arial,sans-serif;
+        margin-bottom: 5px;
+    }
+    .box-program-text li {
+        font: 14px/25px "Fauna One",Arial,sans-serif;
+    }
+    .other-program h2 {
+        font: 24px/34px "Fauna One",Arial,sans-serif;
+    }
+    .other-program ul li {
+        font: 15px/30px "Fauna One",Arial,sans-serif;
+    }
+    .testimonials-text p {
+        font: 15px/22px "Fauna One",Arial,sans-serif;
+    }
+    .testimonials-name {
+        font: 17px "Fauna One",Arial,sans-serif;
+    }
+    .program-title {
+        padding: 30px 0;
+    }
+    .top-program blockquote {
+        background: none;
+        margin-left: 0;
+        margin-top: 25px;
+        min-height: 115px;
+        padding: 0 30px;
+        position: relative;
+    }
+    .top-program blockquote:before, .top-program blockquote:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 29px;
+        height: 24px;
+    }
+    .top-program blockquote:before {
+        top: 0;
+        left: 0;
+        background: url(../images/test-q-left.png) no-repeat 0 0 / cover;
+    }
+    .top-program blockquote:after {
+        bottom: 0;
+        right: 0;
+        background: url(../images/test-q-right.png) no-repeat 0 0 / cover;
+    }
+    .content-boxes {
+        padding: 90px 0 0;
+    }
+    .other-program {
+        padding: 40px 0;
+    }
+    .box-program {
+        float: none;
+        margin: 0;
+        width: auto;
+    }
+    .other-program ul li {
+        float: none;
+        width: auto;
+        margin: 0 0 1px;
+    }
+    .testimonials-program {
+        padding: 40px 0;
+    }
+    .testimonials-text {
+        padding: 0 30px;
+    }
+    .testimonials-name {
+        background: url(../images/test-name.png) no-repeat scroll center center / contain rgba(0, 0, 0, 0);
+    }
+    
+    /* Our Stories */
+    .top-text-stories h3 {
+        font: 800 17px/24px "Open Sans",Arial,sans-serif;
+    }
+    .top-text-stories h2 {
+        font: 24px/35px "Fauna One",Arial,sans-serif;
+    }
+    .text-story h3 {
+        font: 17px/35px "special_eliteregular",Arial,sans-serif;
+    }
+    .text-story p {
+        font: 14px/22px "Fauna One",Arial,sans-serif;
+    }
+    .box-stories.stories-gray h3 {
+        font: 17px/35px "special_eliteregular",Arial,sans-serif;
+    }
+    .container-stories {
+        padding: 0 0 35px;
+    }
+    .content-stories {
+        float: none;
+        width: auto;
+    }
+    .box-stories {
+        float: none;
+        margin-bottom: 20px;
+        width: auto;
+    }
+    .box-stories.right-story {
+        float: none;
+        margin-left: 0;
+        width: auto;
+    }
+    #stor-list-m .dropdown-select {
+        color: #21242c;
+    }
+    #stor-list-m .dropdown-select .caret {
+        color: #4fc673;
+    }
+    
+    /* For schools */
+    .left-school p {
+        font: 17px/32px "Fauna One",Arial,sans-serif;
+        margin-bottom: 20px;
+    }
+    .video-title-school {
+        font: 24px/34px "special_eliteregular",Arial,sans-serif;
+    }
+    .video-title-school span {
+        font: 800 17px "Open Sans",Arial,sans-serif;
+    }
+    .educ-title {
+        font: 24px "Fauna One",Arial,sans-serif;
+        margin-bottom: 30px;
+    }
+    .educ-text h2 {
+        font: 800 17px "Open Sans",Arial,sans-serif;
+    }
+    .educ-text p {
+        font: 14px/22px "Fauna One",Arial,sans-serif;
+    }
+    .educ-text h3 {
+        font: 700 13px "Open Sans",Arial,sans-serif;
+    }
+    .educ-text ul li {
+        font: 700 13px/20px "Open Sans",Arial,sans-serif;
+    }
+    .educ-program-title {
+        font: 24px/34px "Fauna One",Arial,sans-serif;
+        margin-bottom: 30px;
+    }
+    .educ-program-text h2 {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+    }
+    .educ-program-text p {
+        font: 14px/22px "Fauna One",Arial,sans-serif;
+    }
+    /* school-slider */
+    .school-slider {
+        height: auto;
+        overflow: visible;
+        margin-bottom: 50px;
+    }
+    .school-slider ol.flex-control-nav  {
+        bottom: -30px;
+        left: 50%;
+        margin-left: -45px;
+        margin-top: 0;
+        position: absolute;
+    }
+    .school-slider .slides li {
+        height: 120px;
+        background-size: cover;
+    }
+    .video-school {
+        height: 610px;
+    }
+    .left-school {
+        float: none;
+        width: auto;
+    }
+    .right-school {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .educators {
+        padding: 50px 0;
+    }
+    .educ-box {
+        float: none;
+        width: auto;
+        margin-bottom: 30px;
+    }
+    .educ-box:last-child {
+        margin-left: auto;
+        margin-bottom: 0;
+    }
+    .educ-text {
+        padding: 20px;
+    }
+    .educ-program-box {
+        float: none;
+        width: 210px;
+        margin: 0 auto 20px;
+        background-position: 0 0px;
+    }
+    .educ-program-box:last-child {
+        margin-right: auto;
+    }
+    .educ-program-img {
+        width: 155px;
+        margin: 0 auto;
+    }
+    .educ-program-box img {
+        display: block;
+        margin-bottom: 15px;
+        max-width: 100%;
+        width: 100%;
+    }
+    .workshop-box {
+        padding: 40px 0;
+    }
+    .workshop-bg a {
+        background-image: url(../images/worshops-baner-mobile.png);
+        background-position: left top;
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 133px;
+        margin: 0 auto;
+        width: 218px;
+    }
+    
+    /* Workshops */
+    .workshop-content h1 {
+        font: 800 17px/60px "Open Sans",Arial,sans-serif;
+    }
+    .workshop-content p {
+        font: 20px/30px "Fauna One",Arial,sans-serif;
+    }
+    .workshop_programs-wrap-heading .workshop_programs_title {
+        font: 16px/25px "Fauna One",Arial,sans-serif;
+        padding-left: 94px;
+    }
+    .workshop_programs-wrap-heading .workshop_programs_title span{
+        display: block;
+        color: #ff8844;
+        text-decoration: underline;
+        margin-top: 10px;
+    }
+    .workshop-content h3 {
+        font: 700 17px/40px "Open Sans",Arial,sans-serif;
+    }
+    .workshop_programs-wrap-heading .workshop_programs-text {
+        font: 15px/25px "Open Sans",Arial,sans-serif;
+    }
+    .fit-you-need-title {
+        font: 24px "Fauna One",Arial,sans-serif;
+    }
+    .fit-you-need-text h2 {
+        font: 800 17px "Open Sans",Arial,sans-serif;
+    }
+    .fit-you-need-text p {font: 14px/20px "Fauna One",Arial,sans-serif;}
+    .fit-you-need-text ul li {
+        font: 700 13px "Open Sans",Arial,sans-serif;
+    }
+    .fit-you-need-img .you-need-caption {
+        font: 15px/22px "special_eliteregular",Arial,sans-serif;
+        padding: 10px 5px;
+    }
+    .program-expand-box .program-expand-title {
+        font: 800 15px/20px "Open Sans",Arial,sans-serif;
+    }
+    .learn_steps_title, .provide_title {
+        font: 800 17px/30px "Open Sans",Arial,sans-serif;
+    }
+    .program-expand-text {
+        font: 13px/20px "Fauna One",Arial,sans-serif;
+    }
+    .learn_steps_list ul, .learn_provide_list ul {
+        font: 15px/25px "special_eliteregular",Arial,sans-serif;
+    }
+    .expand_bag_title {
+        font: 800 14px/18px "Open Sans",Arial,sans-serif;
+    }
+    .expand_bag_text {
+        font: 14px/22px "Open Sans",Arial,sans-serif;
+    }
+    .workshop-content .left, .workshop-content .right {
+        float: none !important;
+        margin: 0 auto;
+        width: 280px;
+    }
+    .workshop_programs-wrap .workshop_program-expand.bg {
+        background-image: url(../images/program-expand-mobile.png);
+    }
+    .workshop_program-expand .inner {
+        padding-bottom: 30px;
+    }
+    .workshop_program-expand.bg .inner {
+        padding-bottom: 70px;
+    }
+    .workshop-content .aligncenter {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .workshop-content h3, .workshop-content .learn_provide_list  {
+        padding-left: 0;
+        max-width: 280px;
+    }
+    .workshop_programs-img {
+        margin-right: -74px;
+        width: 74px;
+    }
+    .workshop_programs-img img, .expand_bag_image img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+    .workshop_programs-text.hidden-sm {
+        font: 13px/20px "Fauna One",Arial,sans-serif;
+        margin-bottom: 20px;
+    }
+    .workshop_programs-text.hidden-sm p span {display: none;}
+    .program-expand-box {
+        margin-bottom: 30px;
+        width: auto;
+        margin: 0 auto;
+        float: none;
+    }
+    .program-expand-box:last-child {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .program-expand-img img {
+        display: inline-block;
+        width: 280px;
+        margin: 0 auto 30px;
+    }
+    .program-expand-box-top {
+        margin-top: 30px;
+    }
+    .program-expand-box-bot {
+        padding: 30px 20px;
+    }
+    .program-expand-box .slide-btn {
+        font: 800 12px/18px "Open Sans",Arial,sans-serif;
+        padding: 10px 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .workshop_programs-wrap .program-expand-box-bag {
+        padding-bottom: 30px;
+    }
+    .program-expand-box-bag .inner {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: #f7f6f4;
+    }
+    .box-bag-inner {
+        background-color: #e5e3dd;
+        padding: 20px;
+    }
+    .expand_bag_image {
+        margin-right: -74px;
+        width: 74px;
+    }
+    .expand_bag_title {
+        padding-left: 84px;
+        min-height: 74px;
+    }
+    .expand_bag_text {
+        padding-left: 0;
+        padding-top: 15px;
+    }
+    .fit-you-need-box .fit-you-need-text, .fit-you-need-box.odd .fit-you-need-text {
+        float: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 35px;
+        margin: 0;
+    }
+    .fit-you-need-box.odd .fit-you-need-text {}
+    .fit-you-need-box .fit-you-need-img, .fit-you-need-box.odd .fit-you-need-img {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    
+    /* workshop schedule */
+    .workshop-sch-content {
+        padding-bottom: 20px;
+    }
+    .workshop-sch-content h1 {
+        font: 800 17px/22px "Open Sans",Arial,sans-serif;
+        margin-top: 35px;
+        padding: 0 10px;
+    }
+    .workshop-sch-content p {
+        font: 24px/35px "Fauna One",Arial,sans-serif;
+    }
+    .workshops-online h3, .workshops-regions h3 {
+        font: 20px/40px "Fauna One",Arial,sans-serif;
+    }
+    .workshops-online-content-inner strong {
+        font: 800 17px/20px "Open Sans",Arial,sans-serif;
+    }
+    .workshops-online-date p {
+        font: 16px/25px "Fauna One",Arial,sans-serif;
+    }
+    .workshops-regions-content-inner strong {
+        font: 800 20px/25px "Open Sans",Arial,sans-serif;
+    }
+    .workshops-online-details p {
+        font: 14px/25px "Fauna One",Arial,sans-serif;
+    }
+    .workshop-header .inner:before {
+        content: "";
+        display: none;
+        left: 0;
+        position: static;
+        top: 0;
+        width: 0;
+    }
+    .workshop-header h1 {padding: 90px 0 80px;}
+    .workshop-header .inner:after {
+        content: "";
+        display: none;
+        right: 0;
+        position: static;
+        top: 0;
+        width: 0;
+    }
+    .workshop-jump-content ul li {
+        display: inline-block;
+        float: none;
+        width: 100%;
+    }
+    .workshops-online {
+        padding-bottom: 10px;
+        padding-top: 30px;
+    }
+    .workshops-online-content {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #f1f0ec;
+    }
+    .workshops-online-img {
+        margin-right: -55px;
+        width: 55px;
+    }
+    .workshops-online-img img {
+        display: block;
+        width: 100%;
+    }
+    .workshops-regions-content {
+        border-bottom: 1px solid #f1f0ec;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .workshops-online-content-inner {
+        padding-left: 75px;
+        padding-right: 20px;
+    }
+    .col-33 {
+        float: none;
+        width: auto;
+    }
+    .col-50 {
+        width: 50%;
+    }
+    .workshops-regions-content-inner {
+        padding-left: 75px;
+    }
+    
+    /*==========================*/
+    
+}
+
+/*for all tablets Fonts Sizes*/
+@media (min-width: 768px) and (max-width: 1199px) {
+    
+    /*===== Repeatable Parts =====*/
+    
+    /* social row / news row */
+    .home-news h2 {
+        font: 800 20px/24px "Open Sans",Arial,sans-serif;
+    }
+    .home-news h3 {
+        font: normal 30px/50px "Fauna One",Arial,sans-serif;
+    }
+    .home-excerpt p {
+        font: 12px/17px "Fauna One",Arial,sans-serif;
+    }
+    /* Learning Center near you */
+    .location h3 {
+        font: 800 20px/24px "Open Sans",Arial,sans-serif;
+    }
+    .location h2, .imagery-title {
+        font: normal 30px/50px "Fauna One",Arial,sans-serif;
+    }
+    
+    /*====================*/
+    
+    /*========  Homepage  =========*/
+    .text-slide {
+        width: 285px;
+        margin-left: 100px;
+        color: #fff;
+    }
+    .text-slide.slide-1 {
+        padding-top: 35px;
+        margin-left: 65px;
+    }
+    .text-slide.slide-2 {
+        padding-top: 90px;
+        color: #21242c;
+        margin-left: 65px;
+    }
+    .text-slide.slide-3 {
+        width: auto;
+        padding-top: 100px;
+        text-align: center;
+        margin-left: auto;
+    }
+    .buttons-slider.buttons-slider-1 {
+        margin-left: 65px;
+    }
+    .buttons-slider.buttons-slider-2 {
+        margin-left: 65px;
+    }
+    .buttons-slider.buttons-slider-3 {
+        text-align: center;
+        margin-left: auto;
+    }
+    .text-slide h2,
+    .text-slide h3,
+    .text-slide h4 {
+        font: 800 20px/51px 'Open Sans', Arial, sans-serif;
+        margin-bottom: 24px;
+
+    }
+    .text-slide h2 span,
+    .text-slide h3 span,
+    .text-slide h4 span {
+        font: normal 48px/64px 'Fauna One', Arial, sans-serif;
+        display: block; 
+    }
+    .text-slide p {
+        margin-bottom: 35px;
+        font: normal 14px/22px 'Fauna One', Arial, sans-serif;
+    }
+    .education-item h2 {
+        font: 800 20px/23px "Open Sans",Arial,sans-serif;
+    }
+    .education-item p {
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+        margin-bottom: 25px;
+    }
+    .story-home-left h3 {
+        font: 34px/44px "special_eliteregular",Arial,sans-serif;
+    }
+    .story-home-left p {
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+    }
+    .story-home-right p {
+        font: 14px/24px "Fauna One",Arial,sans-serif;
+    }
+    /*==============================*/
+    
+    /*===== Our Approach =====*/
+    
+    .top-text h3 {
+        font: 34px/45px "Fauna One",Arial,sans-serif;
+    }
+    .top-text p {
+        font: 16px/30px "Fauna One",Arial,sans-serif;
+    }
+    .our-story-left {
+        float: left;
+        padding: 75px 0 0;
+        position: absolute;
+        text-align: center;
+        width: 49%;
+        max-width: 460px;
+        max-height: 760px;
+        
+    }
+    .our-story-right {
+        width: 49%;
+        margin-left: 52%;
+        padding: 50px 30px 25px;
+        max-height: 760px;
+    }
+    .video-story {
+        height: 260px;
+    }
+    .our-instruction h2 {
+        font: 34px/45px "Fauna One",Arial,sans-serif;
+    }
+    .our-story-left p {
+        margin-bottom: 5px;
+    }
+    .our-story-right p {
+        font: 14px/24px "Fauna One",Arial,sans-serif;
+    }
+    .our-story-left h3 {
+        font: 24px/35px "Fauna One",Arial,sans-serif;
+    }
+    .our-story-right h4 {
+        font: 700 14px/25px "Open Sans",Arial,sans-serif;
+    }
+    .text-instruction p {
+        font: 16px/24px "Fauna One",Arial,sans-serif;
+    }
+    .image-instruction {
+        width: 470px;
+    }
+    .our-instruction .image-instruction img {
+        height: auto;
+    }
+    .text-instruction {
+        margin-left: 500px;
+    }
+    .we-learned h2 {
+        font: 800 19px "Open Sans",Arial,sans-serif;
+    }
+    .we-learned h4 {
+        font: 34px/45px "Fauna One",Arial,sans-serif;
+    }
+    .learned-title {
+        font: 17px/21px "Open Sans",Arial,sans-serif;
+    }
+    .learned-text p {
+        font: 17px/30px "Fauna One",Arial,sans-serif;
+    }
+    .programs h2 {
+        font: 34px/45px "Fauna One",Arial,sans-serif;
+    }
+    .programs p {
+        font: 16px/27px "Fauna One",Arial,sans-serif;
+    }
+    .content-program li {
+        font: 15px/25px "Fauna One",Arial,sans-serif;
+    }
+    .content-program ul {
+        width: 460px;
+    }
+    .solution-desc h3 {
+        font: 800 19px "Open Sans",Arial,sans-serif;
+    }
+    .solution-desc h2 {
+        font: 34px/45px "Fauna One",Arial,sans-serif;
+    }
+    .boy-title {
+        font: 17px/22px "special_eliteregular",sans-serif;
+    }
+    .boy-desc h4, .girl-desc h4 {
+        font: 14px/25px "Fauna One",Arial,sans-serif;
+    }
+    .boy-desc ul li, .girl-desc ul li{
+        font: 13px/25px "Fauna One",Arial,sans-serif;
+    }
+    .text-boy h3, .text-girl h3{
+        font: 800 30px/35px "Open Sans",Arial,sans-serif;
+    }
+    
+    /* Research */
+    .top-navi li {
+        font: 700 16px "Open Sans",Arial,sans-serif;
+    }
+    .top-navi li a {
+        padding: 15px 12px;
+    }
+    .gray-box h3 {
+        font: 22px/22px "Fauna One",Arial,sans-serif;
+    }
+    .gray-box h4 {
+        font: 800 12px/19px "Open Sans",Arial,sans-serif;
+    }
+    .quote-text p {
+        font: 16px/25px "Fauna One",Arial,sans-serif;
+    }
+    .reserch-desc h3 {
+        font: 800 20px/20px "Open Sans",Arial,sans-serif;
+    }
+    .reserch-desc h2 {
+        font: 34px/45px "Fauna One",Arial,sans-serif;
+    }
+    .reserch-desc p {
+        font: 16px/25px "Fauna One",Arial,sans-serif;
+    }
+    .research-txt h2 {
+        font: 34px/34px "Fauna One",Arial,sans-serif;
+    }
+    .research-txt p {
+        font: 15px/24px "Fauna One",Arial,sans-serif;
+    }
+    .inner-ages p {
+        font: 15px/22px "Fauna One",Arial,sans-serif;
+        margin-bottom: 0;
+    }
+    .inner-ages img {
+        margin-bottom: 0;
+    }
+    .inner-ages h3 {
+        color: #fff;
+        font: 34px "special_eliteregular",Arial,sans-serif;
+        margin-bottom: 10px;
+    }
+    .inner-ages h4 {
+        font: 20px/24px "Fauna One",Arial,sans-serif;
+    }
+    .quote-text {
+        padding: 0 80px;
+    }
+    .testimonials-q-right, .testimonials-q-left {
+        height: 39px;
+        width: 42px;
+        background-size: 100% 100%;
+    }
+    .testimonials-q-left {
+        top: -20px;
+    }
+    .testimonials-q-right {
+        bottom: -20px;
+    }
+    /*results*/
+    .archive-description h2 {
+        font: 34px/45px "Fauna One",Arial,sans-serif;
+    }
+    .archive-description h3 {
+        font: 27px/60px "Fauna One",Arial,sans-serif;
+        margin-bottom: 0;
+    }
+    .archive-description p {
+        font: 16px/25px "Fauna One",Arial,sans-serif;
+    }
+    .archive-description {
+        margin-bottom: 20px;
+    }
+    .archive-description img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .article-text h2 {
+        font: 800 20px/26px "Open Sans",Arial,sans-serif;
+        margin-bottom: 15px;
+    }
+    .article-text p.cat-posts {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    #sidebar .widget-title {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+    }
+    #sidebar .widget li {
+        font: 13px/20px "Fauna One",Arial,sans-serif;
+    }
+    
+    /* Articles */
+    .content-article .post-title {
+        font: 34px/45px "Fauna One",Arial,sans-serif;
+    }
+    
+    /* Blog */
+    .blog-text h2, .nothing h3 {
+        font: 24px/40px "Fauna One",Arial,sans-serif;
+    }
+    .date-blog {
+        font: 18px "Fauna One",Arial,sans-serif;
+    }
+    .blog-text p, .nothing p {
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+    }
+    .count-comment {
+        font: 800 13px "Open Sans",Arial,sans-serif;
+        margin-top: -20px;
+    }
+    .content-post .post-title {
+        font: 34px "Fauna One",Arial,sans-serif;
+    }
+    .side-top .time-post {
+        font: 19px/68px "Fauna One",Arial,sans-serif;
+    }
+    .side-top .addthis_toolbox {
+        width: 345px;
+    }
+    .post-tag span {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .comments-title, .related-posts h2 {
+        font: 34px/60px "Fauna One",Arial,sans-serif;
+    }
+    .text-related h3 {
+        color: #21242c;
+        font: 21px/27px "Fauna One",Arial,sans-serif;
+        margin-bottom: 10px;
+    }
+    .text-related p {
+        color: #455156;
+        font: 13px/21px "Fauna One",Arial,sans-serif;
+    }
+    .related-posts .related-row-1,
+    .related-posts .related-row-3,
+    .related-posts .related-row-5,
+    .related-posts .related-row-7,
+    .related-posts .related-row-9{
+        margin-right: 2%;
+    }
+    .related-row {
+        float: left;
+        width: 48%;
+    }
+    .text-related {
+        margin-left: 190px;
+    }
+    #commentform input[type="text"], #commentform input[type="email"],
+    #commentform input[type="url"], #commentform textarea,
+    .contact-form input[type="text"], .contact-form input[type="email"],
+    .contact-form input[type="url"], .contact-form textarea {
+        width: 100%;
+    }
+    .captcha span {
+        float: none;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    #commentform #easy_captcha_captcha_simple {
+        float: none;
+        width: 100%;
+    }
+    #s { width: 100%;}
+    
+    /* Learning Center page */
+    .top-text-learning h3 {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+    }
+    .top-text-learning p {
+        font: 27px/40px "Fauna One",Arial,sans-serif;
+    }
+    .top-text-learning h4, .top-text-learning h2 {
+        font: 34px/50px "Fauna One",Arial,sans-serif;
+    }
+    .learning-green h2 {
+        font: 34px/50px "Fauna One",Arial,sans-serif;
+    }
+    .learning-green h3 {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+    }
+    .learning-images .learning-image-4, .learning-images .learning-image-5, .learning-images .learning-image-6, .learning-images .learning-image-7,
+    .learning-images .learning-image-8, .learning-images .learning-image-9, .learning-images .learning-image-10, .learning-images .learning-image-11{
+        display: none;
+    }
+    .learning-gray-left h3, .learning-gray-right h3 {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+    }
+    .learning-gray-left p, .learning-gray-right p {
+        font: 16px/26px "Fauna One",Arial,sans-serif;
+    }
+    .title-slide {
+        font: 800 16px/25px "Open Sans",Arial,sans-serif;
+    }
+    
+    .text-expect h2 {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+    }
+    .text-expect h4 {
+        font: 19px/25px "Fauna One",Arial,sans-serif;
+    }
+    .text-expect p {
+        font: 15px/24px "Fauna One",Arial,sans-serif;
+    }
+    .instraction-desc h2 {
+        font: 34px/60px "Fauna One",Arial,sans-serif;
+    }
+    .instraction-title li {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+    }
+    .instraction-left h3, .instraction-right h3 {
+        font: 800 20px/30px "Open Sans",Arial,sans-serif;
+    }
+    .instraction-left p, .instraction-right p {
+        font: 14px/25px "Fauna One",Arial,sans-serif;
+    }
+    h1.expect-title {
+        font: 34px/60px "Fauna One",Arial,sans-serif;
+        margin-bottom: 20px;
+    }
+    .instraction-left, .instraction-right {
+        padding-top: 30px;
+    }
+    
+    /* locations */
+    .left-location h2 {
+        font: 800 20px/60px "Open Sans",Arial,sans-serif;
+    }
+    .left-location p {
+        font: 34px "Fauna One",Arial,sans-serif;
+    }
+    .location-title {
+        font: 34px "Fauna One",Arial,sans-serif;
+        margin-bottom: 30px;
+    }
+    .location-row h4 {
+        font: 800 12px/25px "Open Sans",Arial,sans-serif;
+    }
+    /*locations inner*/
+    .title-location {
+        font: 800 23px/64px "Open Sans",Arial,sans-serif;
+    }
+    .content-detail-location h2 {
+        font: 34px/45px "Fauna One",Arial,sans-serif;
+    }
+    .content-detail-location p {
+        font: 16px/26px "Fauna One",Arial,sans-serif;
+    }
+    .location-info {
+        font: 800 20px/60px "Open Sans",Arial,sans-serif;
+    }
+    .location-info-text p {
+        font: 18px/30px "Fauna One",Arial,sans-serif;
+    }
+    .affiliations h2 {
+        font: 34px/60px "Fauna One",Arial,sans-serif;
+        margin-bottom: 30px;
+    }
+    
+    /* FAQ page */
+    .page-template-page-templatesfaq-page-php .top-text h4 {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+    }
+    .page-template-page-templatesour-approach-page-php .top-text, .page-template-page-templatesfaq-page-php .top-text {
+        padding-bottom: 35px;
+    }
+    .answer h3 span {
+        font: 800 20px/38px "Open Sans",Arial,sans-serif;
+    }
+    .answer p {
+        font: 18px/28px "Fauna One",Arial,sans-serif;
+    }
+    .answer .answer-right h2 {
+        font: 30px "Fauna One",Arial,sans-serif;
+    }
+    .faqs .desc {
+        font: 34px/50px "Fauna One",Arial,sans-serif;
+        padding: 45px 0;
+    }
+    .title-faq span {
+        font: 800 20px/38px "Open Sans",Arial,sans-serif;
+    }
+    .inner-faq h4 {
+        color: #455156;
+        font: 18px/27px "Fauna One",Arial,sans-serif;
+        margin-bottom: 30px;
+    }
+    .inner-faq p {
+        color: #455156;
+        font: 14px/23px "Fauna One",Arial,sans-serif;
+    }
+    
+    /* Evaluation */
+    .evaluation-green h2 {
+        font: 34px/60px "Fauna One",Arial,sans-serif;
+    }
+    .process li {
+        font: 18px/20px "special_eliteregular",Arial,sans-serif;
+    }
+    .lenta {
+        font: 800 17px/70px "Open Sans",Arial,sans-serif;
+    }
+    .test-text h3 {
+        font: 700 20px "Open Sans",Arial,sans-serif;
+    }
+    .test-text p {
+        font: 28px/40px "Fauna One",Arial,sans-serif;
+    }
+    .skill-box h2 {
+        font: 34px/60px "Fauna One",Arial,sans-serif;
+    }
+    .skill-text li {
+        font: 18px/27px "special_eliteregular",Arial,sans-serif;
+    }
+    .bottom-evaluation-left-inner h3 {
+        font: 800 20px/38px "Open Sans",Arial,sans-serif;
+    }
+    .bottom-evaluation-left-inner h4 {
+        font: 24px/38px "Fauna One",Arial,sans-serif;
+    }
+    .bottom-evaluation-left-inner h4 strong {
+        font-size: 20px;
+    }
+    .bottom-evaluation-left-inner p {
+        font: 15px/24px "Fauna One",Arial,sans-serif;
+    }
+    .bottom-evaluation-left-inner h5 {
+        font: 800 20px/38px "Open Sans",Arial,sans-serif;
+    }
+    
+    /* Instruction */
+    .top-text-instr h2 {
+        font: 34px/45px "Fauna One",Arial,sans-serif;
+    }
+    .top-text-instr p {
+        font: 15px/25px "Fauna One",Arial,sans-serif;
+    }
+    .instruction-blue h2 {
+        font: 34px/60px "Fauna One",Arial,sans-serif;
+    }
+    .instruction-blue p {
+        font: 15px/27px "Fauna One",Arial,sans-serif;
+    }
+    .note-title h3 {
+        font: normal 20px "Fauna One",Arial,sans-serif !important;
+    }
+    .note-title h3 span {
+        font: 800 24px "Open Sans",Arial,sans-serif !important;
+    }
+    .note-box li {
+        font: 17px/25px "Fauna One",Arial,sans-serif;
+    }
+    .success-title h3 span {
+        font: 800 24px "Open Sans",Arial,sans-serif;
+    }
+    .success-left p {
+        font: 24px/34px "Fauna One",Arial,sans-serif;
+    }
+    
+    /* we beleieve */
+    .about-top h2 {
+        font: 800 20px/60px "Open Sans",Arial,sans-serif;
+    }
+    .about-top h3 {
+        font: 34px/60px "Fauna One",Arial,sans-serif;
+    }
+    .about-top p {
+        font: 16px/25px "Fauna One",Arial,sans-serif;
+    }
+    .belive-title, .about-title, .founders-title, .timeline-title {
+        font: 34px/60px "Fauna One",Arial,sans-serif;
+        margin-bottom: 30px;
+    }
+    .left-belive h3 {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+    }
+    .about-title, .founders-title, .timeline-title {
+        font: normal 34px/60px 'Fauna One', Arial, sans-serif;
+        margin-bottom: 30px;
+    }
+    .about p {
+        color: #455156;
+        font: 16px/24px "Fauna One",Arial,sans-serif;
+        margin-bottom: 30px;
+    }
+    .about p {
+        font: 16px/24px "Fauna One",Arial,sans-serif;
+        margin-bottom: 20px;
+    }
+    .first-founder h3, .about-founder h3 {
+        font: 24px/60px "Fauna One",Arial,sans-serif;
+        padding-bottom: 30px;
+    }
+    .text-founder p {
+        font: 15px/24px "Fauna One",Arial,sans-serif;
+    }
+    
+    /* int conference */
+    .content-international h2 {
+        font: 800 23px "Open Sans",Arial,sans-serif;
+    }
+    .content-international h3 {
+        font: 34px/60px "Fauna One",Arial,sans-serif;
+    }
+    .content-international p {
+        font: 15px/27px "Fauna One",Arial,sans-serif;
+    }
+    .years-conference .slides li {
+        
+    }
+    .conf-tab li {
+        font: 800 19px/20px "Open Sans",Arial,sans-serif;
+        padding: 15px 5px;
+    }
+    .mens-row h3 {
+        font: 22px/40px "Fauna One",Arial,sans-serif;
+    }
+    .mens-row h2 {
+        font: 24px/36px "Fauna One",Arial,sans-serif;
+    }
+    .mens-row p {
+        font: 15px/24px "Fauna One",Arial,sans-serif;
+    }
+    .box-image img {
+        height: auto;
+        width: 160px;
+    }
+    
+    /* Contact Us */
+    .contact-content h2 {
+        font: 34px "Fauna One",Arial,sans-serif;
+    }
+    .contact-content h3 {
+        font: 800 44px "Open Sans",Arial,sans-serif;
+    }
+    .contact-content p {
+        font: 700 18px "Open Sans",Arial,sans-serif;
+    }
+    /* Get Started */
+    .get-started h2 {
+        font: 34px/100px "Fauna One",Arial,sans-serif;
+    }
+    .step-2, .step-3 {
+        font: 24px/34px "Fauna One",Arial,sans-serif;
+    }
+    
+    /* Privacy Policy  */
+    .text-privacy h2 {
+        font: 34px/60px "Fauna One",Arial,sans-serif;
+    }
+    .text-privacy h3 {
+        color: #21242c;
+        font: 24px/27px "Fauna One",Arial,sans-serif;
+    }
+    .text-privacy ol > li:before, .text-privacy ol > li .list-item-before {
+        font: 24px/27px "Fauna One",Arial,sans-serif;
+    }
+    .side-privacy li a {
+        font: 800 16px/19px "Open Sans",Arial,sans-serif;
+    }
+    .box-privacy {
+        padding: 40px 0;
+    }
+    
+    /* Our programs */
+    .program-title h2 {
+        font: 34px/45px "Fauna One",Arial,sans-serif;
+    }
+    .top-program h3 {
+        font: 22px "Fauna One",Arial,sans-serif;
+    }
+    .top-program p {
+        font: 16px/25px "Fauna One",Arial,sans-serif;
+    }
+    .box-program-title {
+        font: 800 20px/23px "Open Sans",Arial,sans-serif;
+    }
+    .box-program-text p {
+        font: 14px/22px "Fauna One",Arial,sans-serif;
+    }
+    .box-program-text h4 {
+        font: 14px/22px "Fauna One",Arial,sans-serif;
+        margin-bottom: 5px;
+    }
+    .box-program-text li {
+        font: 14px/25px "Fauna One",Arial,sans-serif;
+    }
+    .other-program h2 {
+        font: 34px/44px "Fauna One",Arial,sans-serif;
+    }
+    .other-program ul li {
+        font: 15px/30px "Fauna One",Arial,sans-serif;
+    }
+    .testimonials-text p {
+        font: 17px/33px "Fauna One",Arial,sans-serif;
+    }
+    .testimonials-name {
+        font: 20px/33px "Fauna One",Arial,sans-serif;
+    }
+    .content-boxes {
+        padding: 90px 0 0;
+    }
+    .other-program {
+        padding: 40px 0;
+    }
+    
+    /* Our Stories */
+    .top-text-stories h3 {
+        font: 800 20px/38px "Open Sans",Arial,sans-serif;
+    }
+    .top-text-stories h2 {
+        font: 34px/45px "Fauna One",Arial,sans-serif;
+    }
+    .text-story h3 {
+        font: 21px/35px "special_eliteregular",Arial,sans-serif;
+    }
+    .text-story p {
+        font: 14px/22px "Fauna One",Arial,sans-serif;
+    }
+    .box-stories.stories-gray h3 {
+        font: 21px/35px "special_eliteregular",Arial,sans-serif;
+    }
+    
+    /* For schools */
+    .left-school p {
+        font: 24px/32px "Fauna One",Arial,sans-serif;
+    }
+    .video-title-school {
+        font: 34px/44px "special_eliteregular",Arial,sans-serif;
+    }
+    .video-title-school span {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+    }
+    .educ-title {
+        font: 34px "Fauna One",Arial,sans-serif;
+        margin-bottom: 30px;
+    }
+    .educ-text h2 {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+    }
+    .educ-text p {
+        font: 14px/22px "Fauna One",Arial,sans-serif;
+    }
+    .educ-text h3 {
+        font: 700 15px/35px "Open Sans",Arial,sans-serif;
+    }
+    .educ-text ul li {
+        font: 700 15px/20px "Open Sans",Arial,sans-serif;
+    }
+    .educ-program-title {
+        font: 34px/44px "Fauna One",Arial,sans-serif;
+        margin-bottom: 30px;
+    }
+    .educ-program-text h2 {
+        font: 800 16px "Open Sans",Arial,sans-serif;
+    }
+    .educ-program-text p {
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+    }
+    
+    /* Workshops */
+    .workshop-content h1 {
+        font: 800 20px/60px "Open Sans",Arial,sans-serif;
+    }
+    .workshop-content p {
+        font: 34px/45px "Fauna One",Arial,sans-serif;
+    }
+    .workshop_programs-wrap-heading .workshop_programs_title {
+        font: 22px/45px "Fauna One",Arial,sans-serif;
+    }
+    .workshop_programs-wrap-heading .workshop_programs-text {
+        font: 15px/25px "Open Sans",Arial,sans-serif;
+    }
+    .fit-you-need-title {
+        font: 34px/60px "Fauna One",Arial,sans-serif;
+    }
+    .fit-you-need-text h2 {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+    }
+    .fit-you-need-text p {}
+    .fit-you-need-text ul li {
+        font: 700 13px "Open Sans",Arial,sans-serif;
+    }
+    .fit-you-need-img .you-need-caption {
+        font: 15px/22px "special_eliteregular",Arial,sans-serif;
+        padding: 10px 5px;
+    }
+    .program-expand-box .program-expand-title, .learn_steps_title {
+        font: 800 17px/30px "Open Sans",Arial,sans-serif;
+    }
+    .program-expand-text {
+        font: 15px/22px "Fauna One",Arial,sans-serif;
+    }
+    .learn_steps_list ul, .learn_provide_list ul {
+        font: 16px/30px "special_eliteregular",Arial,sans-serif;
+    }
+    .expand_bag_title {
+        font: 800 18px/30px "Open Sans",Arial,sans-serif;
+    }
+    .expand_bag_text {
+        font: 14px/22px "Open Sans",Arial,sans-serif;
+    }
+    .fit-you-need-box.odd .fit-you-need-text {
+        margin-right: auto;
+        padding-right: 20px;
+    }
+    
+    /* workshop schedule */
+    .workshops-online h3, .workshops-regions h3 {
+        font: 24px/40px "Fauna One",Arial,sans-serif;
+    }
+    .workshops-online-content-inner strong {
+        font: 800 20px/25px "Open Sans",Arial,sans-serif;
+    }
+    .workshops-online-date p {
+        font: 18px/25px "Fauna One",Arial,sans-serif;
+    }
+    .workshops-regions-content-inner strong {
+        font: 800 20px/25px "Open Sans",Arial,sans-serif;
+    }
+    .workshop-header .inner {
+        width: 100%;
+    }
+    
+    /*==========================*/
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    /*===== Header tablet portr =====*/
+    
+    #header {
+        min-height: 165px;
+    }
+    .line-top {
+        background: url(../images/line-header_992.jpg) no-repeat 0 84px;
+    }
+    #logo {
+        width: 200px;
+        height: 64px;
+        background: none;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -100px;
+    }
+    #header.fixed-h {min-height: 65px;}
+    #navigation_spacer.fixed-h{min-height: 165px;}
+    #header.fixed-h #logo {display: none;}
+    #logo a {
+        background: url(../images/mobile-logo.png) no-repeat 0 0;
+        width: 254px;
+        height: 37px;
+        margin: 34px auto 0;
+        display: block;
+    }
+    #top-nav {
+        padding-top: 45px;
+        margin-bottom: 30px;
+    }
+    #top-nav li {
+        font: 13px/25px "Fauna One",Arial,sans-serif;
+        margin-right: 15px;
+    }
+    .learning-center {
+        margin-top: 45px;
+        font: 13px/24px "Fauna One",Arial,sans-serif;
+    }
+    .top-left li, .top-right li {
+        font: 700 15px/24px "Open Sans",Arial,sans-serif;
+        margin-right: 15px;
+        min-width: 80px;
+    }
+    .started {
+        font: 700 15px/40px "Open Sans",Arial,sans-serif;
+        margin-top: -8px;
+        padding: 0 10px;
+    }
+    .top-left {
+        width: auto;
+    }
+    .top-right {
+        margin-left: 0;
+    }
+    .started {
+        font: 700 17px/40px "Open Sans",Arial,sans-serif;
+        margin-top: -8px;
+    }
+    /*====================*/
+    
+    /*===== Repeatable Parts =====*/
+    
+    /* social row / news row */
+    .home-news h3 {
+        margin-bottom: 30px;
+    }
+    .home-excerpt p {
+    }
+    .home-blog, .home-twitter {
+        margin-right: 20px;
+        width: 240px;
+    }
+    .home-instagram {
+        overflow: hidden;
+        width: 175px;
+    }
+    /* Learning Center near you */
+    .location h3 {
+        margin-bottom: 5px;
+    }
+    .location h2, .imagery-title {
+        margin-bottom: 20px;
+    }
+    
+    /*====================*/
+    
+    /*===== Footer tablet portr =====*/
+    
+    #footer .column-one, #footer .column-two {
+        margin-right: 0;
+        width: 50%;
+    }
+    #footer .column-three {
+        width: 50%;
+    }
+    .navigation-one {
+        margin-right: 20px;
+        width: 140px;
+    }
+    .navigation-one ul li, .navigation-two ul li {
+        
+    }
+    .navigation-two {
+        width: 140px;
+    }
+    #footer .column-two p, #footer .column-three p {
+        font: 12px/24px "Fauna One",Arial,sans-serif;
+    }
+    #footer .socials {
+        margin-bottom: 70px;
+    }
+    #footer .socials a {
+        margin-right: 20px;
+    }
+    .bottom-one {
+        width: 248px;
+    }
+    .bottom-one li {
+        font: 10px "Fauna One",Arial,sans-serif;
+    }
+    .bottom-two {
+        float: none;
+        font: 10px/18px "Fauna One",Arial,sans-serif;
+        margin: 20px auto;
+        overflow: hidden;
+        width: 500px;
+    }
+    #footer .line-footer {
+        overflow: hidden;
+        padding: 10px 0 25px;
+    }
+    .bottom-three {
+        float: right;
+        font: 10px/18px "Fauna One",Arial,sans-serif;
+        width: 190px;
+    }
+    
+    /*====================*/
+    
+    /*========  Homepage  =========*/
+    .text-slide.slide-1 {
+       margin-left: 40px;     
+    }
+    #slider .slides li:first-child {
+        background-position: 43% 100% !important;
+    }
+    .buttons-slider.buttons-slider-1 {
+        margin-left: 40px;
+    }
+    .text-slide.slide-3 {
+        width: auto;
+        padding-top: 100px;
+        text-align: center;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .slider .flex-direction-nav {
+        width: 760px;
+    }
+    .welcome-left {
+        float: none;
+        margin-right: 0;
+        width: 100%;
+    }
+    .welcome-right {
+        float: none;
+        margin: 0 auto;
+        width: 570px;
+    }
+    .education-item-over {
+        margin-bottom: 40px;
+        margin-left: 70px;
+        margin-right: 0;
+    }
+    .education-item h2 {
+        font: 800 20px/23px "Open Sans",Arial,sans-serif;
+        margin-bottom: 20px;
+    }
+    .education-item p {
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+        margin-bottom: 25px;
+    }
+    .story-box {
+        width: 740px;
+        padding: 25px 0;
+    }
+    .story-home-left {
+        float: none;
+        padding: 10px 45px;
+        text-align: center;
+        width: 100%;
+    }
+    .story-home-right {
+        float: none;
+        padding: 10px 20px 0 20px;
+        width: 100%;
+    }
+    .story-home-right-text {
+        text-align: center;
+    }
+    .story-home-left h3 {
+        font: 34px/44px "special_eliteregular",Arial,sans-serif;
+    }
+    .story-home-left p {
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+    }
+    .story-home-right p {
+        font: 14px/24px "Fauna One",Arial,sans-serif;
+    }
+    .free-box {
+        float: left;
+        padding-left: 0;
+    }
+    .free-item {
+        display: inline-block;
+        margin-right: 0;
+        min-width: 135px;
+        text-align: center;
+        text-decoration: none;
+    }
+    /*==============================*/
+    
+    /*===== Our Approach portr=====*/
+    
+    .our-story-right {
+        padding: 50px 20px 25px;
+    }
+    .text-instruction {
+        padding: 45px 20px 15px 0;
+    }
+    
+    /* approach animation */
+    .imagery {
+        min-height: 500px;
+    }
+    .image-circle {
+        display: none;
+    }
+    .excerpt-bottom {
+        margin-top: 160px;
+    }
+    .excerpt-bottom p {
+        font: 15px/24px "Fauna One",Arial,sans-serif;
+    }
+    .images-all .image-bg {
+        height: 91px;
+        width: 305px;
+        margin: 0 auto;
+        background: url(../images/grafic-767.png) no-repeat 0 0 transparent !important;
+    }
+    .image-boy {
+        margin-left: 0;
+        padding-top: 91px;
+        width: 305px;
+    }
+    .im-boy {
+        left: -2px;
+        bottom: -130px;
+        height: 130px;
+        width: 146px;
+    }
+    .im-boy.active {
+        bottom: -214px;
+        height: 249px;
+        left: 12px;
+        width: 280px;
+    }
+    .image-girl {
+        width: 305px;
+        margin-left: 0px;
+        z-index: 1;
+    }
+    .im-girl.active {
+        bottom: -218px;
+        height: 249px;
+        right: 12px;
+        width: 280px;
+    }
+    .im-girl {
+        bottom: -130px;
+        right: -2px;
+        height: 130px;
+        width: 146px;
+    }
+    .image-circle {
+        margin-left: -160px;
+        z-index: 0;
+    }
+    .boy-description, .girl-description {
+        padding: 0 46px;
+        background-color: #f1f0ec;
+        margin-bottom: 50px;
+    }
+    .close-boy {
+        background: url(../images/close-boy.png) no-repeat scroll 0 0 / cover;
+        cursor: pointer;
+        height: 60px;
+        position: absolute;
+        right: 25px;
+        top: 53px;
+        width: 60px;
+        z-index: 9;
+    }
+    .close-girl{
+        background: url(../images/close-girl.png) no-repeat 0 0 / cover;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        position: absolute;
+        top: 71px;
+        left: 235px;
+        z-index: 9;
+    }
+    .shit-plug {
+        background-color: #f1f0ec;
+        width: 20px;
+        height: 40px;
+        position: absolute;
+        top: 55px;
+        left: 58px;
+        z-index: 1;
+    }
+    .boy-title, .girl-title {
+        padding: 225px 15px 25px;
+        font: 15px/22px "special_eliteregular",sans-serif;
+    }
+    .text-boy {
+        background: none repeat scroll 0 0 transparent;
+        margin-left: -10px;
+        margin-right: -10px;
+        padding: 0px 10px 0;
+        overflow: hidden;
+        top: 0;
+        min-height: 100%;
+    }
+    .text-girl {
+        background: none repeat scroll 0 0 transparent;
+        margin-left: -10px;
+        margin-right: -10px;
+        padding: 0px 10px 0;
+        overflow: hidden;
+        top: 0;
+        min-height: 100%;
+    }
+    .text-boy h3, .text-girl h3{
+        font: 800 20px/25px "Open Sans",Arial,sans-serif;
+    }
+    .text-boy .slide-btn, .text-girl .slide-btn {
+        display: block;
+        line-height: 24px;
+        margin: 38px auto !important;
+        padding: 10px 25px;
+        text-align: center;
+        cursor: pointer;
+        width: 185px;
+    }
+    .text-boy p, .text-girl p {
+        margin-bottom: 20px;
+    }
+    .text-boy-image, .text-girl-image {
+        background-size: cover;
+        height: 280px;
+        width: 280px;
+    }
+    .text-boy-image-1 img, .text-boy-image-2 img, .text-boy-image-3 img,
+    .text-girl-image-1 img, .text-girl-image-2 img, .text-girl-image-3 img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .text-boy-image-1 {
+        top: 130px;
+        left: 30px;
+        width: 125px;
+    }
+    .text-boy-image-2 {
+        top: 28px;
+        left: 96px;
+        width: 90px;
+    }
+    .text-boy-image-3 {
+        top: 130px;
+        right: 20px;
+        width: 100px;
+    }
+    .text-girl-image-1 {
+        left: 0px;
+        top: 128px;
+        width: 105px;
+    }
+    .text-girl-image-2 {
+        top: 50px;
+        left: 10px;
+        width: 69px;
+    }
+    .text-girl-image-3 {
+        right: 10px;
+        top: 65px;
+        width: 77px;
+    }
+    /*--------------------*/
+    
+    /* Research page */
+    .text-tab {
+        width: 740px;
+    }
+    .tabs-box img {
+        left: -10px;
+        margin: 0 0 40px auto;
+        max-width: 100%;
+    }
+    .research-img img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+    /* results */
+    .blog-content {
+        float: left;
+        width: 560px;
+    }
+    #sidebar {
+        float: right;
+        width: 170px;
+    }
+    #sidebar .widget-title {
+        font: 800 17px "Open Sans",Arial,sans-serif;
+        padding: 15px 5px 15px 7px;
+    }
+    .content-widget {
+        padding: 10px;
+    }
+    /*Articles*/
+    .content-post, .content-article {
+        float: left;
+        width: 560px;
+    }
+    .content-article p {
+        font: 14px/25px "Fauna One",Arial,sans-serif;
+    }
+    /* Blog */
+    .blog-image {
+        float: left;
+        width: 220px;
+    }
+    .blog-text {
+        margin-left: 230px;
+    }
+    #reply-title {
+        float: left;
+        font: 800 20px "Open Sans",Arial,sans-serif;
+        margin-top: 5px;
+        width: auto;
+    }
+    #commentform {
+        float: right;
+        width: 330px;
+    }
+    
+    /* Learning Center page */
+    .learning-images-row div {
+        height: 192px;
+    }
+    .learning-gray-left, .learning-gray-right {
+        padding: 100px 4% 70px;
+        width: 48%;
+    }
+    .instraction {
+        padding: 50px 0;
+    }
+    .instraction-box {
+        background: url(../images/instruction-768.png) repeat-y scroll 0 0 rgba(0, 0, 0, 0);
+    }
+    .instraction-title li {
+        margin: 0 15px;
+    }
+    
+    /* locations */
+    .location-column {
+        float: left;
+        margin-right: 1%;
+        width: 24%;
+    }
+    .left-location {
+        width: 420px;
+    }
+    .right-location {
+        margin-left: 450px;
+    }
+    .right-location input[type="text"] {
+        width: 230px;
+    }
+    .left-location p {
+        font: 30px "Fauna One",Arial,sans-serif;
+    }
+    /*locations inner*/
+    .content-detail-location {
+        padding: 45px 0 35px;
+    }
+    .logo-location {
+        left: 80px;
+    }
+    .location-video-left {
+        width: 330px;
+    }
+    .location-video-right {
+        margin-left: 360px;
+    }
+    .gallery-location .slides li {
+        height: 310px;
+        width: 460px;
+    }
+    .detail-information {
+        left: 45px;
+        position: absolute;
+        top: 35px;
+        width: 410px;
+        z-index: 99;
+    }
+    .affiliations a {
+        margin-left: 45px;
+    }
+    
+    /* FAQ page */
+    .answer .inner {
+        background: url(../images/note-bg-992.png) repeat-y scroll center center rgba(0, 0, 0, 0);
+    }
+    .answer-left {
+        width: 48%;
+        margin-right: 4%;
+    }
+    .answer-right {
+        width: 48%;
+    }
+    .faq {
+        width: 48%;
+        background: url(../images/bg_light_grey.jpg) repeat-y scroll 0 0 rgba(0, 0, 0, 0);
+    }
+    .inner-faq {
+        background: url(../images/list-faq.png) no-repeat scroll 5px 13px rgba(0, 0, 0, 0);
+    }
+    
+    /* Evaluation */
+    .evaluation-green .inner {
+        width: 100%;
+        padding: 0;
+    }
+    .lenta {
+        background: url(../images/lenta-1024.png) no-repeat 0 0;
+        width: 384px;
+        margin: 0 auto;
+        display: block;
+        font: 800 19px/70px 'Open Sans', Arial, sans-serif;
+    }
+    .process {
+        width: 460px;
+    }
+    .skill-image {
+        float: left;
+        margin: 0 2% 0 0;
+        width: 50%;
+    }
+    .skill-text {
+        margin-left: 52%;
+    }
+    .bottom-evaluation-left-inner {
+        margin-left: 0;
+        margin-right: 10px;
+        width: auto;
+    }
+    .bottom-evaluation-right-inner {
+        width: auto;
+        padding-left: 20px;
+    }
+    .bottom-evaluation-right .home-video {
+        height: 214px;
+        margin: 0 auto 50px;
+        width: 320px;
+    }
+    
+    /* Instruction */
+    .box-chage {
+        margin: 0 1% 2% 0;
+    }
+    .box-chage span {
+        height: 130px;
+    }
+    .box-chage h3 {
+        padding-bottom: 20px;
+    }
+    .note-instruction {
+        padding: 60px 0 20px;
+    }
+    .note-instruction .inner {
+        overflow: hidden;
+    }
+    .note-box {
+        background: url(../images/bg_grey1.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+        width: 49%;
+    }
+    .note-box.left {
+        margin: 0;
+    }
+    .note-box.right {
+        margin: 0;
+    }
+    .inner-note {
+        background: url(../images/list-faq.png) no-repeat scroll 6px 0 rgba(0, 0, 0, 0);
+    }
+    .note-title {
+        border-radius: 50%;
+        float: none;
+        height: 150px;
+        margin: 0 auto;
+        width: 150px;
+    }
+    .note-text {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .success-section .inner {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .success-title {
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+    }
+    .success-title h3 {
+        padding-top: 48px;
+    }
+    .success-left {
+        width: 236px;
+    }
+    .success-right {
+        margin-left: 300px;
+        padding: 0 45px 0 0;
+    }
+    .success-right img {
+        margin-bottom: 20px;
+    }
+    
+    /* we beleieve */
+    .graphic {
+        height: 540px;
+    }
+    .left-belive {
+        float: left;
+        width: 48%;
+    }
+    .belives-inner {
+        margin: 65px 45px 40px 30px;
+    }
+    .right-belive {
+        margin-left: 50%;
+        padding: 0;
+    }
+    .right-belive img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .right-belive h4, .right-belive p {
+        padding: 0 45px;
+    }
+    .right-belive p:first-child {
+        padding: 0;
+    }
+    .about {
+        padding: 30px 0;
+    }
+    .about img.alignleft {
+        margin-right: 20px;
+        display: inline-block;
+        width: 49%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .timeline-post {
+        margin: 0;
+    }
+    .timeline-post .event{
+        margin-right: 20px;
+        width: 243px;
+    }
+    .timeline-post .event .event-image img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .timeline-post .direction-nav .flex-prev {
+        background-position: left top;
+        left: 0px;
+    }
+    .timeline-post .direction-nav .flex-next {
+        background-position: right top;
+        right: 0px;
+    }
+    .timeline {
+        padding: 30px 0;
+    }
+    .table-line {
+        width: 740px;
+    }
+    .box-founder img {
+        width: 254px;
+    }
+    .first-founder {
+        width: 254px;
+    }
+    .founder-1 {
+        margin-right: 160px;
+    }
+    .photo-founder {
+        float: left;
+        width: 250px;
+    }
+    .text-founder {
+        margin-left: 280px;
+        padding-right: 30px;
+        text-align: left;
+    }
+    
+    /* int conference */
+    .international-video {
+        overflow: hidden;
+    }
+    
+    #view.inner {
+        padding-left: 0;
+        padding-right: 0;
+        width: 740px;
+    }
+    #view.inner .inner {
+        width: 740px;
+        padding: 0;
+    }
+    .box-image {
+        float: left;
+        width: 180px;
+    }
+    .box-text {
+        margin-bottom: 30px;
+        margin-left: 200px;
+    }
+    
+    /* Get Started */
+    .left-gets {
+        width: auto;
+        float: none;
+        margin-bottom: 40px;
+    }
+    .custom-form {
+        margin: 0 auto;
+        overflow: hidden;
+        width: 600px;
+    }
+    .top-get-bg {
+        left: 50%;
+        margin-left: -385px;
+        width: 770px;
+    }
+    .right-gets {
+        margin-left: 0;
+        overflow: hidden;
+    }
+    .step-2, .step-3 {
+        width: 49%;
+        float: left;
+        font: 24px/34px "Fauna One",Arial,sans-serif;
+        overflow: hidden;
+        min-height: 220px;
+    }
+    .step-2 {
+        margin-right: 2%;
+    }
+    .step-2 img, .step-3 img {
+        margin: 0 -100px 0 0;
+        float: left;
+    }
+    .steps-text {
+        padding: 20px 0 0 120px;
+        text-align: left;
+    }
+    
+    /* Privacy Policy  */
+    .text-privacy {
+        float: left;
+        width: 560px;
+    }
+    .side-privacy {
+        float: right;
+        width: 170px;
+        margin-left: 0;
+    }
+    
+    /* Our programs */
+    .content-stories {
+        float: left;
+        width: 560px;
+    }
+    
+    /* For schools */
+    .educators {
+        padding: 50px 0;
+    }
+    .educ-program-box {
+        width: 140px;
+        margin-right: 10px;
+        background-position: 0 -16px;
+    }
+    .educ-program-img {
+        width: 125px;
+        margin: 0 auto;
+    }
+    .educ-program-box img {
+        display: block;
+        margin-bottom: 15px;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    /* Workshops */
+    .workshop_programs .inner {
+        padding: 25px 10px;
+    }
+    .workshop-content h3, .workshop-content .learn_provide_list  {
+        padding-left: 0;
+        max-width: 400px;
+    }
+    
+    .workshop_programs-img {
+        margin-right: -126px;
+        width: 126px;
+    }
+    .workshop_programs-img img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+    .program-expand-box {
+        margin-bottom: 60px;
+    }
+    .program-expand-img img {
+        display: inline-block;
+        width: 280px;
+        margin: 0 auto 60px;
+    }
+    
+    /*==========================*/
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199px) { /*  tablet  */
+    
+    /*===== Header =====*/
+    
+    #header {
+        min-height: 165px;
+    }
+    .line-top {
+        background: url(../images/line-header_992.jpg) no-repeat 0 84px;
+    }
+    #logo {
+        width: 254px;
+        height: 64px;
+        background: none;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -127px;
+    }
+    #logo a {
+        background: url(../images/logo_992.png) no-repeat 0 0;
+        width: 254px;
+        height: 37px;
+        margin: 27px auto 0;
+        display: block;
+    }
+    #top-nav {
+        padding-top: 45px;
+        margin-bottom: 30px;
+    }
+    .learning-center {
+        margin-top: 45px;
+    }
+    .top-left {
+        width: auto;
+    }
+    .top-right {
+        margin-left: 0;
+    }
+    .top-left li, .top-right li {
+        min-width: 100px;
+    }
+    .started {
+        font: 700 17px/40px "Open Sans",Arial,sans-serif;
+        margin-top: -8px;
+    }
+    #header.fixed-h #logo {display: none;}
+    /*====================*/
+    
+    /*===== Footer =====*/
+    
+    #footer .column-one, #footer .column-two {
+        margin-right: 20px;
+        width: 300px;
+    }
+    #footer .column-three {
+        width: 300px;
+    }
+    .navigation-one {
+        margin-right: 20px;
+        width: 140px;
+    }
+    .navigation-one ul li, .navigation-two ul li {
+        
+    }
+    .navigation-two {
+        width: 140px;
+    }
+    #footer .column-two p, #footer .column-three p {
+        font: 12px/24px "Fauna One",Arial,sans-serif;
+    }
+    #footer .socials a {
+        margin-right: 20px;
+    }
+    .bottom-one {
+        width: 248px;
+    }
+    .bottom-one li {
+        font: 10px "Fauna One",Arial,sans-serif;
+    }
+    .bottom-two {
+        font: 10px/18px "Fauna One",Arial,sans-serif;
+        width: 500px;
+    }
+    .bottom-three {
+        font: 10px/18px "Fauna One",Arial,sans-serif;
+        width: 190px;
+    }
+    
+    /*====================*/
+    
+    /*===== Repeatable Parts =====*/
+    
+    /* social row / news row */
+    .home-news h2 {
+        font: 800 20px/24px "Open Sans",Arial,sans-serif;
+    }
+    .home-news h3 {
+        font: normal 30px/50px "Fauna One",Arial,sans-serif;
+        margin-bottom: 30px;
+    }
+    .home-excerpt p {
+        font: 12px/17px "Fauna One",Arial,sans-serif;
+    }
+    .home-blog, .home-twitter {
+        margin-right: 30px;
+        width: 240px;
+    }
+    .home-instagram {
+        padding-left: 75px;
+    }
+    /* Learning Center near you */
+    .location h3 {
+        font: 800 20px/24px "Open Sans",Arial,sans-serif;
+        margin-bottom: 5px;
+    }
+    .location h2, .imagery-title {
+        font: normal 30px/50px "Fauna One",Arial,sans-serif;
+        margin-bottom: 20px;
+    }
+    
+    /*====================*/
+    
+    /*===== Homepage Parts =====*/
+    
+    
+    .slider .flex-direction-nav {
+        width: 100%;
+    }
+    .slider .flex-prev {
+        left: 42px;
+    }
+    .slider .flex-next {
+        right: 42px;
+    }
+    .text-slide h2, .text-slide h3, .text-slide h4 {
+        font: 800 20px/50px "Open Sans",Arial,sans-serif;
+    }
+    .text-slide h2 span, .text-slide h3 span, .text-slide h4 span {
+        font: 48px/64px "Fauna One",Arial,sans-serif;
+    }
+    .welcome-left {
+        margin-right: 20px;
+        padding-bottom: 30px;
+        width: 460px;
+    }
+    .welcome-left h3 {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+    }
+    .welcome-left h2 {
+        font: 32px/30px "Fauna One",Arial,sans-serif;
+        margin-bottom: 25px;
+    }
+    .welcome-left p {
+        font: 14px/20px "Fauna One",Arial,sans-serif;
+        margin-bottom: 20px;
+    }
+    .welcome-left h4 {
+        font: 18px/20px "Fauna One",Arial,sans-serif;
+        margin-bottom: 41px;
+    }
+    .welcome-left .video-box h3 {
+        font: 22px "Fauna One",Arial,sans-serif;
+        margin-bottom: 8px;
+    }
+    .welcome-right {
+        float: right;
+        width: 459px;
+    }
+    .bottom-tour h3 {
+        font: 800 20px/20px "Open Sans",Arial,sans-serif;
+    }
+    .bottom-tour h2 {
+        font: 26px/44px "special_eliteregular",Arial,sans-serif;
+    }
+    .education-head h2 {
+        font: 800 20px/20px "Open Sans",Arial,sans-serif;
+    }
+    .education-head p {
+        font: 34px/44px "Fauna One",Arial,sans-serif;
+    }
+    .education-item-over.last {
+        margin-right: 0;
+    }
+    .education-item {
+        width: 220px;
+    }
+    .education-item h2 {
+        font: 800 20px/23px "Open Sans",Arial,sans-serif;
+        margin-bottom: 20px;
+    }
+    .education-item p {
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+        margin-bottom: 25px;
+    }
+    .story-home .inner {
+        background: url("../images/strory-bg.jpg") no-repeat scroll center center / contain rgba(0, 0, 0, 0) !important;
+    }
+    .story-box {
+        padding: 0;
+        margin: 35px auto;
+        width: 780px;
+    }
+    .story-home-left {
+        padding: 25px 45px;
+    }
+    
+    .story-home-left h3 {
+        font: 34px/44px "special_eliteregular",Arial,sans-serif;
+    }
+    .story-home-left p {
+        font: 13px/22px "Fauna One",Arial,sans-serif;
+    }
+    .story-home-right {
+        padding: 20px 35px 0 20px;
+    }
+    .story-home-right h2 {
+        font: 800 20px "Open Sans",Arial,sans-serif;
+    }
+    .story-home-right .wp-post-image {
+        height: auto;
+        margin-right: 20px;
+        width: 140px;
+    }
+    .story-home-right-text {
+/*        margin-left: 160px;*/
+        margin-bottom: 25px;
+    }
+    .story-home-right p {
+        font: 14px/24px "Fauna One",Arial,sans-serif;
+    }
+    .story-home-right .slide-btn {
+        margin-left: 10px;
+    }
+    .free-item {
+        margin-right: 80px;
+        min-width: 125px;
+    }
+    
+    /*==========================*/
+    
+    /*===== Our Approach =====*/
+    .text-instruction {
+        margin-left: 500px;
+    }
+    .images-all .image-bg {
+        height: 150px;
+        width: 940px;
+        background: url(../images/grafic-922.png) no-repeat 0 0 transparent !important;
+    }
+    .image-boy {
+        margin-left: -25px;
+        padding-top: 105px;
+        width: 470px;
+    }
+    .im-boy {
+        left: 62px;
+        width: 292px;
+    }
+    .im-boy.active {
+        bottom: -338px;
+        height: 383px;
+        left: -5px;
+        width: 428px;
+    }
+    .image-girl {
+        margin-left: 498px;
+        width: 470px;
+        z-index: 1;
+    }
+    .im-girl.active {
+        bottom: -338px;
+        height: 383px;
+        right: -6px;
+        width: 428px;
+    }
+    .im-girl {
+        right: 62px;
+    }
+    .image-circle {
+        margin-left: -160px;
+        z-index: 0;
+    }
+    .boy-description {
+        padding: 0 71px;
+    }
+    .girl-description {
+        padding: 0 71px;
+    }
+    .boy-title {
+        padding: 395px 25px 25px;
+    }
+    .girl-title {
+        padding: 395px 25px 25px;
+    }
+    .text-boy {
+        padding: 150px 83px 1px 220px;
+    }
+    .text-girl {
+        margin-right: 235px;
+        padding: 150px 240px 1px 95px;
+    }
+    .text-boy-image, .text-girl-image {
+        background-size: cover;
+        height: 328px;
+        width: 328px;
+    }
+    .text-boy-image-1 img, .text-boy-image-2 img, .text-boy-image-3 img,
+    .text-girl-image-1 img, .text-girl-image-2 img, .text-girl-image-3 img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .text-boy-image-1 {
+        top: 150px;
+        width: 195px;
+    }
+    .text-boy-image-2 {
+        top: 28px;
+        left: 96px;
+        width: 137px;
+    }
+    .text-boy-image-3 {
+        top: 140px;
+        right: 0;
+        width: 152px;
+    }
+    .text-girl-image-1 {
+        left: -35px;
+        top: 145px;
+        width: 160px;
+    }
+    .text-girl-image-2 {
+        top: 35px;
+        width: 108px;
+    }
+    .text-girl-image-3 {
+        right: -19px;
+        top: 50px;
+        width: 125px;
+    }
+    
+    /* Research page */
+    .text-tab {
+        width: 940px;
+    }
+    .tabs-box img {
+        left: -15px;
+        margin: 0 0 40px auto;
+        max-width: 100%;
+    }
+    .child-article {
+        padding: 42px 0;
+    }
+    .research-img img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+    /* results */
+    .blog-content {
+        float: left;
+        width: 700px;
+    }
+    #sidebar {
+        float: right;
+        width: 220px;
+    }
+    
+    /*Articles*/
+    .content-post, .content-article {
+        float: left;
+        width: 700px;
+    }
+    
+    /* Blog */
+    .blog-image {
+        float: left;
+        width: 230px;
+    }
+    .blog-text {
+        margin-left: 250px;
+    }
+    #reply-title {
+        float: left;
+        font: 800 20px "Open Sans",Arial,sans-serif;
+        margin-top: 5px;
+        width: auto;
+    }
+    #commentform {
+        float: right;
+        width: 500px;
+    }
+    
+    /* Learning Center page */
+    .learning-gray-left, .learning-gray-right {
+        padding: 150px 4% 70px;
+        width: 48%;
+    }
+    .instraction {
+        padding: 50px 0;
+    }
+    .instraction-box {
+        background: url(../images/instruction-1024.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    }
+    .instraction-title li {
+        margin: 0 30px;
+    }
+    /* locations */
+    .location-column {
+        float: left;
+        margin-right: 1%;
+        width: 24%;
+    }
+    .left-location {
+        width: 480px;
+    }
+    .right-location {
+        margin-left: 510px;
+    }
+    /*locations inner*/
+    .content-detail-location {
+        padding: 45px 0 35px;
+    }
+    .location-video-left {
+        width: 330px;
+    }
+    .location-video-right {
+        margin-left: 480px;
+    }
+    .gallery-location .slides li {
+        height: 310px;
+        width: 460px;
+    }
+    .detail-information {
+        left: 72px;
+        position: absolute;
+        top: 35px;
+        width: 410px;
+        z-index: 99;
+    }
+    
+    /* FAQ page */
+    .answer .inner {
+        background: url(../images/note-bg-1024.png) repeat-y scroll center center rgba(0, 0, 0, 0);
+    }
+    .answer-left {
+        width: 48%;
+    }
+    .answer-right {
+        width: 48%;
+    }
+    .faq {
+        width: 48%;
+        background: url(../images/bg_light_grey.jpg) repeat-y scroll 0 0 rgba(0, 0, 0, 0);
+    }
+    .inner-faq {
+        background: url(../images/list-faq.png) no-repeat scroll 5px 13px rgba(0, 0, 0, 0);
+    }
+    
+    /* Evaluation */
+    .evaluation-green .inner {
+        width: 100%;
+        padding: 0;
+    }
+    .lenta {
+        background: url(../images/lenta-1024.png) no-repeat 0 0;
+        width: 384px;
+        margin: 0 auto;
+        display: block;
+        font: 800 19px/70px 'Open Sans', Arial, sans-serif;
+    }
+    .process {
+        width: 460px;
+    }
+    .skill-image {
+        float: left;
+        margin: 0 2% 0 0;
+        width: 50%;
+    }
+    .skill-text {
+        margin-left: 52%;
+    }
+    .bottom-evaluation-left-inner {
+        margin-left: 42px;
+        margin-right: 10px;
+        width: auto;
+    }
+    .bottom-evaluation-right-inner {
+        width: auto;
+        padding-left: 50px;
+    }
+    .bottom-evaluation-right .home-video {
+        height: 214px;
+        margin: 0 auto 70px;
+        width: 380px;
+    }
+    
+    /* Instruction */
+    .box-chage span {
+        height: 170px;
+    }
+    .note-instruction {
+        padding: 60px 0 20px;
+    }
+    .note-box {
+        background: url(../images/bg_grey1.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+        width: 49%;
+    }
+    .note-box.left {
+        margin-left: 0;
+    }
+    .note-box.right {
+        margin-right: 0;
+    }
+    .inner-note {
+        background: url(../images/list-faq.png) no-repeat scroll 6px 0 rgba(0, 0, 0, 0);
+    }
+    .note-title {
+        border-radius: 50%;
+        float: none;
+        height: 150px;
+        margin: 0 auto;
+        width: 150px;
+    }
+    .note-text {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .success-section .inner {
+        margin: 0 42px;
+        width: 940px;
+    }
+    .success-title {
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+    }
+    .success-title h3 {
+        padding-top: 48px;
+    }
+    .success-left {
+        width: 236px;
+    }
+    .success-right {
+        margin-left: 300px;
+        padding: 0 45px 0 0;
+    }
+    
+    /* we beleieve */
+    .graphic {
+        height: 665px;
+    }
+    .left-belive {
+        float: left;
+        width: 460px;
+    }
+    .belives-inner {
+        margin: 85px 45px 40px 30px;
+    }
+    .right-belive {
+        margin-left: 480px;
+        padding: 0;
+    }
+    .right-belive img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .right-belive h4, .right-belive p {
+        padding: 0 45px;
+    }
+    .right-belive p:first-child {
+        padding: 0;
+    }
+    .about {
+        padding: 30px 0;
+    }
+    .about img.alignleft {
+        margin-right: 20px;
+        display: inline-block;
+        width: 460px;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .timeline {
+        padding: 30px 0;
+    }
+    .table-line {
+        width: 940px;
+    }
+    .first-founder {
+        width: 254px;
+    }
+    .founder-1 {
+        margin-right: 160px;
+    }
+    .box-founder img {
+        width: 254px;
+    }
+    .photo-founder {
+        float: left;
+        width: 250px;
+    }
+    
+    /* int conference */
+    .international-video {
+        overflow: hidden;
+    }
+    #view.inner {
+        padding-left: 0;
+        padding-right: 0;
+        width: 740px;
+    }
+    #view.inner .inner {
+        width: 740px;
+        padding: 0;
+    }
+    .box-image {
+        float: left;
+        width: 180px;
+    }
+    .box-text {
+        margin-bottom: 30px;
+        margin-left: 200px;
+    }
+    
+    /* Get Started */
+    .left-gets {
+        width: auto;
+        float: none;
+        margin-bottom: 40px;
+    }
+    .left-gets .custom-form {
+        margin: 0 auto;
+        overflow: hidden;
+        width: 600px;
+    }
+    .top-get-bg {
+        left: 50%;
+        margin-left: -385px;
+        width: 770px;
+    }
+    .right-gets {
+        margin-left: 0;
+        overflow: hidden;
+    }
+    .step-2, .step-3 {
+        width: 49%;
+        float: left;
+        font: 24px/34px "Fauna One",Arial,sans-serif;
+        overflow: hidden;
+        min-height: 100%;
+    }
+    .step-2 {
+        margin-right: 2%;
+    }
+    .step-2 img, .step-3 img {
+        margin: 0 -100px 0 0;
+        float: left;
+    }
+    .steps-text {
+        padding: 20px 0 0 120px;
+        text-align: left;
+    }
+    
+    /* Privacy Policy  */
+    .text-privacy {
+        float: left;
+        width: 700px;
+    }
+    .side-privacy {
+        margin-left: 720px;
+    }
+    
+    /* Our programs */
+    
+    /* Our Stories */
+    .content-stories {
+        float: left;
+        width: 700px;
+    }
+    
+    /* For schools */
+    .educators {
+        padding: 50px 0;
+    }
+    .educ-program-box {
+        width: 170px;
+        margin-right: 20px;
+        background-position: 0 -16px;
+    }
+    .educ-program-img {
+        width: 125px;
+        margin: 0 auto;
+    }
+    .educ-program-box img {
+        display: block;
+        margin-bottom: 15px;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    /* Workshops */
+    .workshop_programs .inner {
+        padding: 25px 42px;
+    }
+    .workshop_programs-img {
+        margin-right: -126px;
+        width: 126px;
+    }
+    .workshop_programs-img img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+    .program-expand-box {
+        margin-bottom: 60px;
+    }
+    .program-expand-img img {
+        display: inline-block;
+        width: 280px;
+        margin: 0 auto 60px;
+    }
+    
+    
+    /*==========================*/
+}
+
+@media (min-width: 1200px) {
+    .top-text-instr h2 {
+        padding: 0 130px;
+    }
+    .started {padding: 0 33px;}
+
+}
+@media (min-width: 1439px) and (max-width: 1700px) {
+    .event {
+        float: left;
+        margin-right: 20px;
+        position: relative;
+        width: 244px;
+    }
+    .event img {
+        display: block;
+        width: 100%;
+    }
+}
+@media (min-width: 1439px) {
+    
+}
+
+
+@media print {
+
+}

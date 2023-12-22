@@ -1,0 +1,20 @@
+﻿body { margin:0 auto; background-color:#dfdfdf;font-family:Georgia, "Times New Roman", Times, serif; font-size:14px;}
+.main{ width:1000px; margin:0 auto; background-color:#fff;}
+.head{ margin:0 auto; text-align:center; padding-top:25px; padding-bottom:25px;}
+.padding{ }
+.textbox{  height:22px; border:1px solid #dfdfdf; background-color:#fafafa; border-radius:2px; text-transform:uppercase;}
+.textboxEmail{  height:22px; border:1px solid #dfdfdf; background-color:#fafafa; border-radius:2px; }
+.textbox:hover{  height:22px; border:1px solid #2b95f4; background-color:#fafafa; border-radius:2px;}
+.dropdown{  height:22px; border:1px solid #dfdfdf; background-color:#fafafa; border-radius:2px;}
+.dropdown:hover{  height:22px; border:1px solid #2b95f4; background-color:#fafafa; border-radius:2px;}
+.tdgap{ height:10px;
+    text-align: center;
+}
+.space{ border-top:1px solid #ccc; padding-top:15px;}
+
+
+.checkboxFive {
+width: 25px;
+margin: 20px 100px;
+position: relative;
+}
